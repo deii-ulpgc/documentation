@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Básico</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -21,8 +21,8 @@
         <p class="special-text">Texto formateado en CSS</p>
     </div>
     <hr />
-    <div class="seccion">
-        <h2>Márgenes y Padding - Bordes</h2>
+    <div class="seccion higher">
+        <h2>Bordes</h2>
         <div class="flex">
             <div class="cont-externo">
                 <div class="cont-verde  cont">caja verde</div>
@@ -36,21 +36,9 @@
                 <div class="r3 cont2"> <strong>border-radius</strong>: 15px </div>
                 <div class="r4 cont2"> <strong>border-radius</strong>: 20px </div>
             </div>
-            <div>
-                <div class="p1 cont2"> <strong>padding</strong>: 0 </div>
-                <div class="p2 cont2"> <strong>padding</strong>: 5px </div>
-                <div class="p3 cont2"> <strong>padding</strong>: 10px </div>
-                <div class="p4 cont2"> <strong>padding</strong>: 20px </div>
-            </div>
-            <div>
-                <div class="m1 cont2"> <strong>margin</strong>: 0 </div>
-                <div class="m2 cont2"> <strong>margin</strong>: 5px </div>
-                <div class="m3 cont2"> <strong>margin</strong>: 10px </div>
-                <div class="m4 cont2"> <strong>margin</strong>: 20px </div>
-            </div>
         </div>
+        <hr />
     </div>
-    <hr/>
     <div class="seccion higher">
         <h2>Sombras</h2>
         <div class="flex shadow-container">
@@ -60,7 +48,111 @@
             <div class="shadow4 cont3"><strong>box-shadow</strong>: inset 0px 0px 5px 5px rgba(170, 0, 255, 0.75);</div>
         </div>
     </div>
+    <hr />
+    <div class="seccion">
+        <h2>Márgen y Padding</h2>
+        <p> Se ve mejor dando clic derecho > Inspeccionar elemento.</p>
+        <div class="flex">
+            <div class="cont-externo2">
+                <div class="p1 cont2"> <strong>padding</strong>: 0 </div>
+                <div class="p2 cont2"> <strong>padding</strong>: 5px </div>
+                <div class="p3 cont2"> <strong>padding</strong>: 10px </div>
+                <div class="p4 cont2"> <strong>padding</strong>: 20px </div>
+            </div>
+            <div class="cont-externo2">
+                <div class="m1 cont2"> <strong>margin</strong>: 0 </div>
+                <div class="m2 cont2"> <strong>margin</strong>: 5px </div>
+                <div class="m3 cont2"> <strong>margin</strong>: 10px </div>
+                <div class="m4 cont2"> <strong>margin</strong>: 20px </div>
+            </div>
+            <div class="cont-externo2">
+                <div class="pt cont4"> <strong>padding-top</strong>: 20px </div>
+                <div class="pr cont4"> <strong>padding-right</strong>: 20px </div>
+                <div class="pb cont4"> <strong>padding-bottom</strong>: 20px </div>
+                <div class="pl cont4"> <strong>padding-left</strong>: 20px </div>
+            </div>
+            <div class="cont-externo2">
+                <div class="mt cont4"> <strong>margin-top</strong>: 20px </div>
+                <div class="mr cont4"> <strong>margin-right</strong>: 20px </div>
+                <div class="mb cont4"> <strong>margin-bottom</strong>: 20px </div>
+                <div class="ml cont4"> <strong>margin-left</strong>: 20px </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="seccion">
+        <h2>Grid</h2>
+        <div class="flex">
+            <div class="grid">
+                <div class="cont-verde cont5">caja verde</div>
+                <div class="cont-rojo cont5">caja roja</div>
+                <div class="cont-azul cont5">caja azul</div>
+                <div class="cont-morado cont5">caja morada</div>
+            </div>
+            <div>
+                <code>
+                    .<strong>grid</strong>{<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>border</strong>: 5px solid black;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>width</strong>: fit-content;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>display</strong>: grid;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>grid-template-columns</strong>: 50px 300px;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>grid-template-rows</strong>: 200px 75px;<br/>
+                    } <br/>
+                    
+                    div class="<strong>grid</strong>"<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-verde</strong> cont5" - caja verde - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-rojo</strong> cont5" - caja roja - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-azul</strong> cont5" - caja azul - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-morado</strong> cont5" - caja morada - /div<br/>
+                    /div
+                </code>
+            </div>
+        </div>
+    </div>
     <hr/>
+    <div class="seccion">
+        <h2>Flex</h2>
+        <div class="flex">
+            <div class="flex border">
+                <div class="cont-verde cont5b">caja verde</div>
+                <div class="cont-rojo cont5b">caja roja</div>
+                <div class="cont-azul cont5b">caja azul</div>
+                <div class="cont-morado cont5b">caja morada</div>
+                <div class="cont-rosa cont5b">caja rosa</div>
+                <div class="cont-gris cont5b">caja gris</div>
+            </div>
+            <div>
+                <code>
+                    .<strong>flex-wrap</strong>{<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>border</strong>: 5px solid black;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>width</strong>: 200px;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>display</strong>: flex;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>flex-wrap</strong>: wrap;<br/>
+                    } <br/>
+                    
+                    div class="<strong>flex</strong>"<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-verde</strong> cont5" - caja verde - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-rojo</strong> cont5" - caja roja - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-azul</strong> cont5" - caja azul - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-morado</strong> cont5" - caja morada - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-rosa</strong> cont5" - caja rosa - /div<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;div class="<strong>cont-gris</strong> cont5" - caja gris - /div<br/>
+                    /div
+                </code>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="seccion">
+        <h2>Pseudoclases</h2>
+        <div class="flex">
+            <div class="btn-active btn">:active</div>
+            <div class="btn-hover btn">:hover</div>
+            <div>
+                <input type="text" disabled>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
