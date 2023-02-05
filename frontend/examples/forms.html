@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Omitir el style, es para la estética de la página de ejemplo -->
+    <style>
+        body{padding: 20px; margin: 0;}
+        p, h2{margin: 0;}
+    </style>
+</head>
+<body>
+    <!-- En action se pondría la acción al presionar submit -->
+    <form action=""> 
+        <h1>Formularios</h1>
+        <!-- Texto -->
+        <p>input type="text" implica cualquier caracter, se utiliza para campos que van a ser pequeños.</p>
+        <label for="texto">Texto</label><input type="text" placeholder="Texto corto" id="texto"/><br/><br/>
+        
+        <!-- Número -->
+        <p>input type="number" implica caracter numéricos.</p>
+        <label for="num">Número</label><input type="number" placeholder="Números" id="num"/><br/><br/>
+        
+        <!-- Correo -->
+        <p>input type="email" se utiliza para especificar correos electrónicos.</p>
+        <label for="email">Correo</label><input type="email" name="email" placeholder="Correo electrónico" id="email"><br/><br/>
+        
+        <!-- Movil -->
+        <p>input type="phone" se utiliza para especificar correos electrónicos.</p>
+        <label for="movil">Móvil</label><input type="phone" name="phone" placeholder="Nº de movil" id="movil"><br/><br/>
+        
+        <!-- Contraseña -->
+        <p>input type="pass" se utiliza para ocultar el texto que se introduce.</p>
+        <label for="pass">Contraseña</label><input type="password" name="pass" placeholder="Contraseña" id="pass"><br/><br/>
+        
+        <!-- TextArea -->
+        <p>textarea se utiliza para escribir un gran número de palabras. Normalmente para comentarios, opiniones, etc.</p>
+        <p>cols: número de columnas, rows: número de filas</p>
+        <label for="textarea">Área de texto</label><br/>
+        <textarea name="ta" id="textarea" cols="30" rows="10" placeholder="Escribe algo gordo"></textarea><br/><br/>
+        
+        <!-- Select -->
+        <p>input type="pass" se utiliza para ocultar el texto que se introduce.</p>
+        <select name="asignaturas" id="asignaturas">
+            <option value="md">Matemáticas Discretas</option>
+            <option value="p1">Programación 1</option>
+            <option value="vc">Visión por computador</option>
+            <option value="is1">Ingeniería del Software 1</option>
+            <option value="ps">Producción de Software</option>
+        </select><br/><br/>
+        
+        <!-- Checkbox -->
+        <p>input type="radio" genera una radio-button. Esta puede ser pulsada clicando sobre el propio cuadrado, o 
+            sobre la etiqueta asignada para mayor UX. Se usa para dar al usuario la posibilidad de elegir 1 entre 
+            varias opciones</p>
+        <input type="radio" name="radio" id="radio1"> <label for="radio1">Label para checkbox</label><br/>
+        <input type="radio" name="radio" id="radio2"> <label>Label sin asignación</label><br/>
+        <input type="radio" name="radio" id="radio3"> <label for="radio3">rb3 con asignación</label><br/><br/>
+        
+        <!-- Radio buttons -->
+        <p>input type="checkbox" genera una checkbox. Se usa para dar al usuario la posibilidad de elegir entre 0 y N opciones.</p>
+        <input type="checkbox" name="check" id="checkbox1"> <label for="checkbox1">Label para checkbox</label><br/>
+        <input type="checkbox" name="check" id="checkbox2"> <label>label sin asignación</label><br/>
+        <input type="checkbox" name="check" id="checkbox3"> <label for="checkbox3">cb3 sin asignación</label><br/><br/>
+        
+        <!-- Color -->
+        <p>input type="color" se utiliza para seleccionar un color.</p>
+        <label for="col">Color</label><input type="color" name="color" id="col"><br/><br/>
+        
+        <!-- Fecha -->
+        <p>input type="date" se utiliza para seleccionar una fecha.</p>
+        <label for="fecha">Fecha</label><input type="date" name="date" id="fecha"><br/><br/>
+        
+        <!-- Fichero -->
+        <p>input type="file" se utiliza para seleccionar un fichero del pc.</p>
+        <label for="fichero">Fichero</label><input type="file" name="file" id="fichero"><br/><br/>
+        
+        <!-- Botones -->
+        <p>Hay distintas formas de generar un botón per se:</p>
+        <label for="boton-btn">button</label><button onclick="alert('Alerta desde etiqueta button')" id="boton-btn"> button </button><br/>
+        <label for="boton-inp">input type="button"</label><input type="button" id="boton-inp" value="input-button" onclick="alert('Alerta desde botón')"><br/>
+        <label for="boton-sub">input type="submit"</label><input type="submit" value="input-submit" id="boton-sub" onclick="alert('Alerta desde submit')"><br/>
+    </form>
+    
+    <hr/>
+    <h1>Ejemplo completo</h1>
+    <form action="">
+        <fieldset class="container">
+            <legend><h2>Información básica de usuario</h2></legend>
+            <div class="name-field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <div class="surname-field">
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname">
+            </div>
+            <div class="phone-field">
+                <label for="nphone">Nº de móvil</label>
+                <input type="phone" id="nphone">
+            </div>
+            <div class="pass-field">
+                <label for="passw">Contraseña</label>
+                <input type="password" id="passw">
+            </div>
+            <div class="rpass-field">
+                <label for="rpass">Repetir Contraseña</label>
+                <input type="password" id="rpass">
+            </div>
+            <div class="carrera">
+                <label for="carrera">Carrera</label>
+                <select id="carrera">
+                    <option value="ii">Ingeniería Informática</option>
+                    <option value="im">Ingeniería Mecánica</option>
+                    <option value="derecho">Derecho</option>
+                    <option value="teleco">Telecomunicaciones</option>
+                    <option value="arq">Arquitectura</option>
+                </select>
+            </div>
+            <div>
+                <label for="ta">¿Qué te parece la ULPGC?</label><br/>
+                <textarea id="ta" cols="60" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
