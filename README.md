@@ -8,10 +8,11 @@ Muchos os preguntareis, por que un repo diferente solo para documentación, en v
 
 # 🦮 Guías:
 
-Estas son las guías que iremos subiebdo las próximas semanas.
+- **Guía del desarrollador web galáctico 🌌 :** El mejor curso introductorio al desarrollo web de toda la Galaxia IC352. 
+[Enlace](./introductory-guides/guia-del-web-developer-galactico.md)
 
-- **Guía al desarrollo web galáctico 🌌 :** El mejor curso introductorio al desarrollo web de toda la Galaxia IC352. 
-
+<!--
 - **Guía del frontend rockstar 🎸 :** Convierteté en el rockstar de tu empresa sin necesidad de aprender a tocar la guitarra.
 
 - **Guía del backend telépata 🧠**: Acabarás leyendole la mente al front y devolviendole el JSON que necesitá siempre.
+-->
