@@ -1,3 +1,10 @@
+Autores:
+  - Jose Peña Seco (@josericardopenase)
+  - Rubén Santana Lorenzo (@RubisRage)
+
+Contribuidores:
+  - Javier Dominguez Suárez (@javierdominguezsuarez)
+
 # La guía del desarrollador web galáctico 🚀
 
 Bienvenidos a la guía definitiva de la DEII para entender de una vez por todas el mapa general del desarrollo web. Pero no cualquier desarrollo web, sino el desarrollo web **GALÁCTICO.**
