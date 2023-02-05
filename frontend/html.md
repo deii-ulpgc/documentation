@@ -18,13 +18,32 @@
 * `<style>`: Contiene estilos CSS.
 * `<script>`: Contiene código JavaScript.
 
-### Propuesta 1 - Generar un fichero HTML básico con título.
+### Generar un fichero HTML básico con título.
 
-1. Crear un fichero HTML con el nombre `index.html`.
-2. Para obetener el código base de HTML usando VSCode, escribir `html:5` y pulsar `Enter`.
-3. Para ejecutar el fichero HTML, pulsar `Ctrl + Shift + P` y escribir `Live Server: Open with Live Server`.
-4. A continuación, clicaremos sobre el fichero `index.html` y le daremos a `Open with Live Server`.
-   ![Ejemplo de código HTML](./assets/html_base.png)
+Crear un fichero HTML con el nombre `index.html`.
+
+Para obetener el código base de HTML usando VSCode, escribir `html:5` y pulsar `Enter`.
+
+Para ejecutar el fichero HTML, pulsar `Ctrl + Shift + P` y escribir `Live Server: Open with Live Server`.
+
+A continuación, clicaremos sobre el fichero `index.html` y le daremos a `Open with Live Server`.
+
+
+```apache
+<!-- Comentario en HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+```
 
 ## Etiquetas básicas del Body
 
@@ -88,23 +107,4 @@ Elementos que puede contener una tabla:
 
 [Página de referencia](https://www.uv.es/~sto/libros/cyberdisk/alice/html/s1_6.htm)
 
-`<form action="func_pertinente">`
-
-`<input>`: Herramienta básica para la obtención de datos.
-
-* `<input type="text">` : Texto plano
-* `<input type="password">` : Texto escondido con caracteres circulares
-* `<input type="checkbox">` : Checkbox
-  * [ ] Algo así
-* `<input type="radio">` : Texto plano
-* `<input type="text">` : Texto plano
-* `<input type="text">` : Texto plano
-* `<input type="text">` : Texto plano
-* `<input type="text">` : Texto plano
-* `<input type="submit">` : Envía la información recogida en el formulario
-
-`<label>`: Etiqueta que asigna un elemento de entrada a un texto.
-
-`<textarea>`: Área de texto, hecha para insertar textos o párrafos largos.
-
-`<select>`: Contiene distintas opciones (`<option>`)
+Acceder a [prueba de formularios](./examples/forms.html) para ver mejor el funcionamiento de los formularios.
