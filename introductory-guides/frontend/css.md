@@ -179,4 +179,6 @@ Las pseudoclases más usadas son:
 
 `:visited` - Representa la apariencia que tiene  un elemento cuando se ha visitado. Se suele usar para los enlaces.
 
+## Media Querys
+
 ## SCSS Básico
