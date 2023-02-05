@@ -12,6 +12,8 @@ Algunos errores básicos al empezar pueden ser:
 
 No darse cuenta que es en cascada, esto significa que a medida que se escriben nuevos atributos, se pueden ir sobreescribiendo los atributos anteriores.
 
+Ejemplo Final
+
 ## Información básica
 
 [Página de referencia](https://www.diegocmartin.com/como-empezar-con-css/).
@@ -162,8 +164,6 @@ Las pseudoclases más usadas son:
 `:disabled` - Representa la apariencia que tiene un elemento desabilitado.
 
 `:valid` - Selecciona cualquier elemento válido.
-
-`:invalid` - Selecciona cualquier elemento inválido.
 
 `:focus` - Representa la apariencia que tiene un elemento cuando está seleccionado. Se suele usar para los inputs.
 

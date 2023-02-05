@@ -135,15 +135,52 @@ div.shadow-container{ margin-top: 10px; }
 .btn{
     text-align: center;
     width: 75px;
-    padding: 5px;
+    height: fit-content;
     border-radius: 10px;
-    transition: all .2s ease;
     cursor: pointer;
-    font-family:'Courier New', Courier, monospace;
+}
+.input{ border-radius: 5px; }
+.input, .btn{
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
     border: 2px solid black;
+    transition: all .2s ease;
+    padding: 5px;
 }
 
 .btn-active{ box-shadow: 0px 7px 1px #0000ff99; }
 .btn-active:active{ box-shadow: 0px 5px 1px #0000ff99; }
 
 .btn-hover:hover{ background-color: lightgray; }
+
+.disabled::placeholder, 
+.valid::placeholder, 
+.focus::placeholder{
+    color: #00000095;
+}
+.disabled:disabled{ background-color: darkgray; cursor:not-allowed;}
+.valid:valid{ background-color: green; }
+.focus:focus{ background-color: yellowgreen; }
+
+
+.child li:first-child{
+    color: darkcyan;
+}
+.child li:last-child{
+    color: red;
+}
+.child li:nth-child(3){
+    color:orange
+}
+
+a.enlace{
+    height: fit-content;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    transition: all .2s ease;
+    padding: 5px;
+}
+
+a:visited{ color: lightseagreen; }
+a:focus{ color: mediumpurple; }
+a:hover{ color: darkcyan; background-color: gray; }
