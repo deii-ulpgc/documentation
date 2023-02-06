@@ -447,8 +447,8 @@ Como bien decíamos al final en un html estamos definiendo un árbol donde los p
 
 ## CSS
 
-Bueno, seguramente, cuando hayas visto el formulario que he puesto arriba te ha dado
-cancer en los ojos de lo feo que és ¿No? Pues aquí viene nuestro amigo 
+Bueno, seguramente, cuando hayas visto el formulario que he puesto arriba te han empezado a sangrar
+los ojos de lo feo que és ¿No? Pues aquí viene nuestro amigo 
 [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 a salvarnos el culo. Para añadir css solo tendremos que crear un archivo con la
 extensión \*.css y referenciarlo en el html. 
