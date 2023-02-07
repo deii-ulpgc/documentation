@@ -32,8 +32,8 @@ form{
     justify-content: center;
 }
 
-fieldset{ 
-    padding: 15px 100px 15px 100px; 
+.container{ 
+    padding: 15px 100px; 
     border-radius: 10px;
 }
 
@@ -108,4 +108,15 @@ select:hover{
     background-color: #7e647e;
     border: 2px solid #140e14;
     color: var(--white);
+}
+
+
+@media (max-width: 480px){
+    .gengar{
+        width: 100px;
+        left: 25px;
+    }
+    .flex-line{
+        display: block;
+    }
 }

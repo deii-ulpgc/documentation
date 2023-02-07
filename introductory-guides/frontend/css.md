@@ -179,6 +179,85 @@ Las pseudoclases más usadas son:
 
 `:visited` - Representa la apariencia que tiene  un elemento cuando se ha visitado. Se suele usar para los enlaces.
 
+
+**Parada para ver ejemplo de CSS con el formulario de la sección de HTML.**
+
+[CSS](./examples/css-form.html)[.html](./examples/css-form.html)
+
 ## Media Querys
+
+[Página de referencia](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+![media queries](../assets/media-querys.png)
+
+En la estética de las distintas páginas es necesario generar distintos formatos en fun.ción del ancho de la página. 
+
+Esto se hace con los `@media (max-width: 320px){}` de esta forma, solo cambiarán los elementos que se encuentren dentro del @ media.
+
+Otras de las medias que se pueden utilizar son `@media (orientation: landscape){}` para definir si queremos que los cambios se hagan cuando la orientación de la pantalla es en horizontal o en vertical.
+
+PE.
+
+```apache
+# El elemento que tenga .rojo, tendrá color rojo.
+.rojo{ color: red }
+
+# Si el ancho es menor de 768px el color del elemento que tenga la clase rojo, será azul.
+@media (max-width: 768px){
+	.rojo{ color: blue; }
+}
+```
+
+@media (max-width: 768px){} - Menor o igual a 768px.
+
+@media (max-width: 768px){} - Mayor o igual a 768px
+
+Sigue siendo Estilos en Cascada, por lo que lo que si escribimos:
+
+```apache
+.red{ 
+	background-color: black; 
+	color: yellow;
+}
+
+
+# Menor o igual a 768px.
+@media (max-width: 768px){
+	.rojo{ color:red; } 
+}
+
+# Mayor o igual a 768px
+@media (min-width: 768px){
+	.rojo{ color:blue; } 
+}
+```
+
+En ambos casos el fondo será negro, y sólo cambiará el color de la letra. Y en nigún caso el color de la letra será amarillo, ya que se superponen los 2 media queries.
+
+Lo normal sería tener algo como:
+
+```apache
+#Cosas por defecto(pantalla mayor a 1200px)
+
+# Entre 1200px y 1024px (formato pantalla normal)).
+@media (max-width: 1200px) and (min-width: 1024px)){ }
+
+# Entre 1024px y 768px (formato tablet)).
+@media (max-width: 1024px) and (min-width: 768px)){ }
+
+# Entre 768px y 480px (formato movil/orientación horizontal)).
+@media (max-width: 768px) and (min-width: 480px)){ }
+
+# Entre 480px y 320px (formato movil orientación vertical)).
+@media (max-width: 480px) and (min-width: 320px)){ }
+
+```
+
+Para utilizar los media querys, la mejor forma es con F12, y usar el icono en la esquina superior izquierda, que tiene un movil y una tablet, con esto podrás cambiar el alto y el ancho de la página a antojo.
+
+(No se ve bien debido a que no se puso todavía un formato correcto para estas dimensiones)
+
+![media-query](../assets/query.png)
+
 
 ## SCSS Básico

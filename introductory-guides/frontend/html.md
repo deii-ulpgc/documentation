@@ -28,7 +28,6 @@ Para ejecutar el fichero HTML, pulsar `Ctrl + Shift + P` y escribir `Live Server
 
 A continuación, clicaremos sobre el fichero `index.html` y le daremos a `Open with Live Server`.
 
-
 ```apache
 <!-- Comentario en HTML -->
 <!DOCTYPE html>
