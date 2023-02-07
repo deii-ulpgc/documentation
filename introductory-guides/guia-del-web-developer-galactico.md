@@ -9,11 +9,11 @@ Contribuidores:
 
 Bienvenidos a la guía definitiva de la DEII para entender de una vez por todas el mapa general del desarrollo web. Pero no cualquier desarrollo web, sino el desarrollo web **GALÁCTICO.**
 
-Pero tranquilo astronauta, sabemos que no quieres marearte en tu primer viaje a si que vamos a ir, como dice fonsi, des pa ci to.
+Pero tranquilo astronauta, sabemos que no quieres marearte en tu primer viaje a si que vamos a ir, como dice Fonsi, des pa ci to.
 
-el único objetivo de esta guía es que cuando la termines tengas un mapa en la cabeza de como funciona el desarrollo web y puedas comenzar a trabajar.
+El único objetivo de esta guía es que cuando la termines tengas un mapa en la cabeza de cómo funciona el desarrollo web y puedas comenzar a trabajar.
 
-Comencemos pues!
+¡Comencemos!
 
 # Índice
 
@@ -29,10 +29,10 @@ Comencemos pues!
 
 Buenas aspirante. Antes de poder embarcarte en tu viaje a través de la galaxia para
 convertirte en el desarrollador web definitivo vas a tener que familiarizarte con los
-protocolos de seguridad de la nave ¿No pensarías que puedes subirte a una nave espacial
-sin tener ni pajorera idea, no?
+protocolos de seguridad de la nave. No pensarías que puedes subirte a una nave espacial
+sin tener ni pajorera idea, ¿no?
 
-A continuación vamos a atravesar una nebulosa conceptual que describe el desarrollo web
+A continuación, vamos a atravesar una nebulosa conceptual que describe el desarrollo web
 desde el comienzo a hasta las técnicas modernas y que se utilizarán para desarrollar la página web de la delegación.
 
 ## El modelo cliente/servidor
@@ -57,23 +57,23 @@ el servidor espera pacientemente una solicitud.
 
 ## HTTP
 
-Ahora que hemos hablado de la principal forma en que dos máquinas se envían mensajes
-deberíamos hablar del formato de estos.
+Ahora que hemos hablado de la principal forma en que dos máquinas se envían mensajes,
+deberíamos hablar del formato de éstos.
 
 El protocolo [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) es,
 de forma muy reducida, el formato con el que se envían todos los mensajes a través de
-internet. Ejemplos del uso de HTTP son envíar un formulario de inicio de sesión o el código fuente de una página web (HTML, del que hablaremos más adelante).
+internet. Ejemplos del uso de HTTP son enviar un formulario de inicio de sesión o el código fuente de una página web (HTML, del que hablaremos más adelante).
 
 Un mensaje HTTP está formado por dos partes.
 
 - **La cabecera del mensaje** contiene metadatos como el
   [tipo de mensaje](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)
   o el formato de los datos enviados (JSON, CSV, HTML, etc).
-- **La carga del mensaje**, o payload, son los datos que se quieren envíar. No todos
-  los mensajes HTTP requieren de este campo de forma que es opcional.
+- **La carga del mensaje**, o payload, son los datos que se quieren enviar. No todos
+  los mensajes HTTP requieren de este campo.
 
-Es importante mencionar que el protocolo HTTP sigue el modelo cliente/servidor de
-forma que todas las comunicaciones comienzan con una solicitud, HTTP Request, (Por
+Es importante mencionar que el protocolo HTTP sigue el modelo cliente/servidor. 
+Todas las comunicaciones comienzan con una solicitud, HTTP Request, (Por
 ejemplo: GET, que se utiliza para solicitar infomación o PUT, que se suele utilizar
 para actualizar información) y terminan con una respuesta, HTTP Response, que
 contiene un código numérico indicando éxito o, en caso de fallo, la razón del error.
@@ -87,12 +87,11 @@ Tanto la solicitud como la respuesta podrían incluir un payload, por ejemplo:
 
 En un principio, las páginas web eran [estáticas](https://en.wikipedia.org/wiki/Static_web_page).
 El cliente, en este caso un navegador web, solicitaba al servidor una página web y
-este responde con el código que representa la página (HTML) que el navegador puede
+éste responde con el código que representa la página (HTML) que el navegador puede
 utilizar para generar la vista que finalmente se entiende por la página.
 
-Se les llama estáticas porque el código HTML se aloja en el servidor de la misma
-forma en la que se va a envíar al usuario y todos los clientes reciben la exacta
-misma copia.
+Se les denomina estáticas porque código HTML se aloja en el servidor de la misma forma en la que se envía al usuario, y todos los clientes reciben la misma copia exacta.
+
 
 ```
 Cliente               Servidor
@@ -111,8 +110,7 @@ Ahí se quedaba la cosa, nada de aplicaciones en tiempo real como WhatsApp Web.
 Con el tiempo surgió la necesidad de personalizar las páginas webs en función del
 cliente para mostrar, por ejemplo, la lista de la compra de un usuario en particular.
 Para conseguir este objetivo el código HTML se escribe de forma genérica
-(Con variables, bucles, condicionales, etc.) y, posteriormente, se transforma en una
-página estática a partir de los datos correspondientes (Como el usuario o el catálogo de una tienda).
+(Con variables, bucles, condicionales, etc.) y, posteriormente, se transforma en una página estática a partir de los datos correspondientes (Como el usuario o el catálogo de una tienda).
 
 Algunas de las tecnologías que permiten seguir este modelo son
 [JavaServer Pages](https://en.wikipedia.org/wiki/Jakarta_Server_Pages),
@@ -120,8 +118,7 @@ Algunas de las tecnologías que permiten seguir este modelo son
 [Angular](https://angular.io/)
 y, la que nosotros utilizaremos, [Next](https://nextjs.org/).
 
-A este proceso se le conoce como renderizado, en el contexto del desarrollo web, y existen
-varias formas de realizarlo:
+A este proceso se le conoce como renderizado, en el contexto del desarrollo web, y existen varias formas de realizarlo:
 
 ### Server Side Rendering (SSR)
 
@@ -145,12 +142,12 @@ la página estática. Ejemplos de SSR son JavaServer Pages y PHP.
 **Ventajas**:
 
 - El cliente recibe todo el HTML generado lo que facilita un mejor ranking en la
-  página de búsquedas de google ([SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)).
-  Y esto no es poca cosa.
+  página de búsquedas de Google ([SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)).
+  Lo cual no es poca cosa.
 
 **Desventajas**:
 
-- La carga computacional de renderización puede saturar al o los servidores.
+- La carga computacional de renderización puede saturar a los servidores involucrados.
 - Hace falta refrescar la página cada vez que se desea actualizar el contenido. Las
   solicitudes recurrentes saturan a la red y los servidores, más aún si el HTML generado
   es extenso.
@@ -161,8 +158,8 @@ Bueno pues lo mismo pero al revés, ¿No? Ciertamente la idea es la misma aunque
 tan trivial darle la vuelta, al fin y al cabo, ¿Como puede el cliente renderizar una
 página web que no conoce?
 
-La respuesta a esto es [Javascript](https://en.wikipedia.org/wiki/JavaScript): En
-lugar de responder con un archivo HTML el servidor devolverá código javascript capaz
+La respuesta a esto es [Javascript](https://en.wikipedia.org/wiki/JavaScript): en
+lugar de responder con un archivo HTML, el servidor devolverá código javascript capaz
 de construir la página por sí mismo.
 
 ```
@@ -181,7 +178,7 @@ Un ejemplo de CSR es Angular.
 **Ventajas**:
 
 - Permite actualizar el contenido de la página sin necesidad de refrescar. Esto lo
-  conviene en la opción idónea para aplicaciones altamente interactivas, imagina que
+  convierte en la opción idónea para aplicaciones altamente interactivas. Imagina que
   tuvieras que refrescar la página para ver cada mensaje que te llega nuevo a Whatsapp
   Web.
 - Libera carga del servidor.
@@ -189,7 +186,7 @@ Un ejemplo de CSR es Angular.
 **Desventajas**:
 
 - Tiene muy mal [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)
-  puesto que el HTML está vacío en un principio lo que le dificulta a google posicionar
+  puesto que el HTML está vacío en un principio, lo que le dificulta a Google posicionar
   tu página.
 
 ### Hybrid Rendering
@@ -212,10 +209,7 @@ Renderización               |
 ```
 
 Este acercamiento nos permite escoger a voluntad, para cada caso, la solución que
-mejor se adapte. Por ejemplo la gran parte de la página es poco interactiva y su
-contenido no cambia a menudo de forma que la renderizamos en el servidor, sin embargo,
-la aplicación tiene un chat de atención al cliente, esta parte que es altamente
-interactiva la renderizamos en el cliente.
+mejor se adapte. Por ejemplo la parte de la página poco interactiva y cuyo contenido no cambia a menudo, la renderizamos en el servidor. Por otro lado, la parte de la aplicación que tiene un chat de atención al usuario —altamente interactivo—, lo renderizamos en el cliente.
 
 De esta forma obtenemos un mejor [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)
 sin la necesidad de sacrificar toda interactividad.
@@ -225,17 +219,17 @@ sin la necesidad de sacrificar toda interactividad.
 He de admitir que hasta ahora he estado mintiendo, bueno más bien he ocultado parte
 de la verdad. Por la imagen que se ha pintado hasta el momento parece que hay dos
 agentes que interactuan: el cliente y el servidor, sin embargo, en realidad son cinco agentes
-los interactuan en una página web moderna.
+los que interactuan en una página web moderna.
 
 ### 1. El cliente
 
-Este sigue siendo el navegador web del usuario que quiere acceder a la página. Nada ha
+Sigue siendo el navegador web del usuario que quiere acceder a la página. Nada ha
 cambiado.
 <br>
 
 ### 2. El servidor de frontend
 
-Frontend de aquí en adelante, es el servidor que hemos estado viendo hasta ahora. Se encarga de devolver el HTML (SSR) o el javascript (CSR) al cliente cuando este se conecta por primera vez
+Frontend de aquí en adelante, es el servidor que hemos estado viendo hasta ahora. Se encarga de devolver el HTML (SSR) o el javascript (CSR) al cliente cuando éste se conecta por primera vez
 a la página web.
 <br>
 
@@ -266,7 +260,7 @@ a través de URLs.
 
 A continuación se muestran los **verdaderos diagramas de los diferentes
 modelos de desarrollo web**. Se utiliza como ejemplo un cliente
-cualquiera y el servidor la delegación. Los contenedores representan
+cualquiera y el servidor de la delegación. Los contenedores representan
 las máquinas físicas mientras que los componentes dentro de estas
 representan procesos.
 
@@ -276,8 +270,7 @@ representan procesos.
 
 ![SSR Diagram](./assets/ssr-diagram.png)
 
-**Corrección de errata**: El número dos no está en el diagrama, se debe
-ignorar y continuar por el tres.
+**Corrección de errata**: El número dos no está en el diagrama, continuar por el tres.
 
 ### CSR
 
@@ -290,32 +283,33 @@ a medida que haga falta actualizar información.
 
 ![Hybrid Diagram](./assets/hybrid-diagram.png)
 
-**Corrección de errata**: El número dos no está en el diagrama, se debe
-ignorar y continuar por el tres.
+**Corrección de errata**: El número dos no está en el diagrama, continuar por el tres.
 
 **Nota**: Las relaciones entre Backend y Database se llevan a cabo 
-siempres antes del paso cuatro, construir el contenido.
+siempre antes del paso cuatro, construir el contenido.
 
 Los pasos 10. y 11. pueden llevarse a cabo multiples veces
 a medida que haga falta actualizar información.
 
-Ahora que entiendes lo básico es hora de que comiences tu viaje, buena 
-suerte explorador espacial.
+Ahora que entiendes lo básico es hora de que comiences tu viaje. Buena 
+suerte, explorador espacial.
 
-3, 2, 1... Despegue!!!!!!!
+3, 2, 1... ¡¡Despegue!!
 
 
 # Producto: Del problema a la solución
 
-Bueno viajero, que tal ha ido el lanzamiento? Tienes un poco cara de mareado. Pero bueno, tranquilo que has aterricado en el planeta más alucinante de todos. El planeta **Producto**.
+Bueno viajero, ¿qué tal ha ido el lanzamiento? Tienes un poco de cara de mareado. Pero bueno, tranquilo, que has aterrizado en el planeta más alucinante de todos. El planeta **Producto**.
 
-Te noto aturdido, te estarás preguntando ¿Qué es producto? Producto es todo y nada, es el infinito y el cero. Uhum Uhum... vale me dejo de tonterías. Producto es el area de una empresa que se encarga de ser intermediario entre el equipo de desarrollo y el equipo de negocio. Transforma las ideas locas de una empresa en prototipos viables listos para programar, midiendo el impacto real de los mismos una vez entregados al cliente final.
+Te noto aturdido, te estarás preguntando ¿Qué es producto? Producto es todo y nada, es el infinito y el cero. Uhum Uhum... vale, mejor me dejo de tonterías. 
 
-Sin un departamento de producto muy bueno, es muy difícil que una empresa o Startup funcione. Es por ello que muchos VCs (Venture Capital) o BA (Business Angels) solo invierten en startups con equipos de producto de renombre o que hayán demostrado capacidad para innovar y aportar valor. Un ejemplo de este tipo de VC es Itnig de Barcelona.
+Producto es el area de una empresa que se encarga de ser intermediario entre el equipo de desarrollo y el equipo de negocio. Transforma las ideas locas de una empresa en prototipos viables listos para programar, midiendo el impacto real de los mismos una vez entregados al cliente final.
+
+Sin un departamento de producto muy bueno, es muy difícil que una empresa o Startup funcione. Es por ello que muchos VCs (Venture Capital) o BA (Business Angels) solo invierten en startups con equipos de producto de renombre o que hayan demostrado capacidad para innovar y aportar valor. Un ejemplo de este tipo de VC es Itnig de Barcelona.
 
 Las funciones que realizan los perfiles de este tipo son:
 
-- Identificación de problemas (pains) de nuestro cliente - Ideación de funcionalidades que solventen esos problemas
+- Identificación de problemas (pains) de nuestro cliente - Ideación de funcionalidades que solventen esos problemas.
 - Priorización de esas funcionalidades.
 - Diseño de un prototipo que cumpla con las especificaciones.
 - Testeo y evaluación del rendimiento de nuestro prototipo.
@@ -325,7 +319,7 @@ Este flujo sigue el esquema llamado "Double Diamond Design Process"
 
 ![Double Diamond](./assets/Double_diamond.png)
 
-Dentro de producto como os podreis imaginar hay varios roles: (estos roles suelen ser variables al igual que su función en la empresa)
+Dentro de producto como os podréis imaginar hay varios roles —los cuales suelen ser variables al igual que su función en la empresa:
 
 - Product Manager
 - Product Designer
@@ -334,7 +328,7 @@ Dentro de producto como os podreis imaginar hay varios roles: (estos roles suele
 - Chief Product Officer
   ...
 
-nosotros nos centraremos en dos de ellos, el Product Manager y el Product Designer.
+Nosotros nos centraremos en dos de ellos: el Product Manager y el Product Designer.
 
 ## Product Manager:
 
@@ -342,14 +336,14 @@ El Product Manager se encarga de la primera fase del diseño: research de proble
 
 Hay dos reglas que todo Product Manager debe marcarse en la sangre:
 
-1. No creer nada hasta que no lo pruebes (A.K.A Lean Startup).
+1. No creer nada hasta que lo verifiques (A.K.A Lean Startup).
 2. Tomar decisiones en base a datos (A.K.A Data Driven Decisions o en su abreviación DDD).
 
-Su primer labor será hacer research del sector en el que se mueve, encontrando y verificando los problemas reales del cliente. Para esto puede apoyarse de metodologías como Lean Startup. Qué por cierto es la metodología que ha llevado Silicon Valley a donde esta ahora mismo. Esta se basa en el ciclo hipótesis, test y aprendizaje descrito en la imagen posterior.
+Su primer labor será hacer research del sector en el que se mueve, encontrando y verificando los problemas reales del cliente. Para esto puede apoyarse de metodologías como Lean Startup. Lo cual por cierto es la metodología que ha llevado Silicon Valley a donde está ahora mismo. Ésta se basa en el ciclo hipótesis, test y aprendizaje descrito en la imagen posterior.
 
 ![Lean_Startup](./assets/lean-startup.jpg)
 
-Dentro de Lean Startup nos dan un consejo muy importante a la hora de definir y desarrollar un producto/funcionalidad. Crear MVPs e irlos iterando hasta alcanzar la versión final. ¿Esto que quiere decir? Imaginemos que el producto que queremos desarrollar es un coche, el coche tiene como objetivo llevar a Rubén desde Tafira (Punto A) hasta Las Palmas (Punto B) para ir al peluquero (que ya le hace falta). Como personas de producto podríamos hacer dos cosas:
+Dentro de Lean Startup nos dan un consejo muy importante a la hora de definir y desarrollar un producto/funcionalidad. Crear MVPs e irlos iterando hasta alcanzar la versión final. ¿Esto qué quiere decir? Imaginemos que el producto que queremos desarrollar es un coche, el coche tiene como objetivo llevar a Rubén desde Tafira (Punto A) hasta Las Palmas (Punto B) para ir al peluquero (que ya le hace falta). Como personas de producto podríamos hacer dos cosas:
 
 1. Decirle al equipo de dearrollo que haga primero las ruedas, después el carenado, después el motor... y a lo mejor en 3 años tenemos el coche listo
 2. Empezar por construir un patinete en 1 día, después una bicicleta, después una motocicleta y por último ya el coche.
@@ -447,10 +441,9 @@ Como bien decíamos al final en un html estamos definiendo un árbol donde los p
 
 ## CSS
 
-Bueno, seguramente, cuando hayas visto el formulario que he puesto arriba te ha dado
-cancer en los ojos de lo feo que és ¿No? Pues aquí viene nuestro amigo 
+Bueno, seguramente, el formulario que he puesto arriba no te ha sido tan agradable a la vista ¿No? Pues aquí viene nuestro amigo 
 [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-a salvarnos el culo. Para añadir css solo tendremos que crear un archivo con la
+a sacarnos del apuro. Para añadir css solo tendremos que crear un archivo con la
 extensión \*.css y referenciarlo en el html. 
 
 Los estilos también se pueden añadir directamente en el html a través de los 
