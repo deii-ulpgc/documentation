@@ -345,39 +345,39 @@ Su primer labor será hacer research del sector en el que se mueve, encontrando 
 
 Dentro de Lean Startup nos dan un consejo muy importante a la hora de definir y desarrollar un producto/funcionalidad. Crear MVPs e irlos iterando hasta alcanzar la versión final. ¿Esto qué quiere decir? Imaginemos que el producto que queremos desarrollar es un coche, el coche tiene como objetivo llevar a Rubén desde Tafira (Punto A) hasta Las Palmas (Punto B) para ir al peluquero (que ya le hace falta). Como personas de producto podríamos hacer dos cosas:
 
-1. Decirle al equipo de dearrollo que haga primero las ruedas, después el carenado, después el motor... y a lo mejor en 3 años tenemos el coche listo
+1. Decirle al equipo de dearrollo que haga primero las ruedas, después el carenado, después el motor... y a lo mejor en 3 años tenemos el coche listo.
 2. Empezar por construir un patinete en 1 día, después una bicicleta, después una motocicleta y por último ya el coche.
 
-La diferencia entre el método 1 y el método dos esque si optas por el 1, tardarás 3 años en darte cuenta que rubén no se corta el pelo (su pelo es una objeto inmutable) y en el segundo 1 día.
+La diferencia entre el perimer método y el segundo es que si optas por el primero, tardarás 3 años en darte cuenta que Rubén no se corta el pelo (su pelo es una objeto inmutable) y en el segundo sólo un día.
 
-A donde va esta metafora: es mejor crear productos que consigan, aunque de forma pobre, solucionar el problema de tu cliente desde el minuto 1, y después irlos iterando con el paso de tiempo, que hacer funcionalidades de forma muy perfeccionista para acabarte dando cuenta que el cliente no tiene ese problema y te has equivocado de antes.
+Básicamente, es mejor crear productos que consigan, aunque de forma pobre, solucionar el problema de tu cliente desde el minuto uno y después irlos iterando con el paso del tiempo, que hacer funcionalidades de forma muy perfeccionista para acabarte dando cuenta que el cliente no tiene ese problema y te has equivocado de antes.
 
 ![MVP](./assets/mvp.png)
 
-Su segunda función es idear funcionalidades que solventen los problemas encontrados, priorizandolas según su importancia. Una heurística, muy sencilla, pero popular, para hacer esto es usar la matriz effort/value que nos permite en muy poco tiempo identificar aquellas que aporten mas valor con el mínimo esfuerzo (Principio de Pareto). El output de esta fase deberá de ser un Product Roudmap, que se puede crear con Jira, Product Board o cualquier otro software pero la idea es que todo el equipo sepa que funcionalidades se van a desarrollar a largo plazo y que prioridades tienen. Mas tarde estas funcionalidades se convertiran en epics que el equipo de desarrollo tendrá que implementar.
+Su segunda función es idear funcionalidades que solventen los problemas encontrados, priorizándolas según su importancia. Una heurística, muy sencilla pero popular para hacer esto, es usar la matriz effort/value que nos permite en muy poco tiempo identificar aquellas que aporten mas valor con el mínimo esfuerzo (Principio de Pareto). El output de esta fase deberá de ser un Product Roadmap, que se puede crear con Jira, Product Board o cualquier otro software. La idea es que todo el equipo sepa que funcionalidades se van a desarrollar a largo plazo y que prioridades tienen. Más tarde estas funcionalidades se convertirán en epics que el equipo de desarrollo tendrá que implementar.
 
 ![Lean_Startup](./assets/effort-value-matrix.png)
 
-Mensaje muy importante!!! A la hora de definir una funcionalidad, sobretodo si esta es muy ambiciosa, es importante que se haga en interaciones de MVPS. Para empezar hablemos de que es
+¡¡Muy importante!! A la hora de definir una funcionalidad, sobretodo si ésta es muy ambiciosa, es importante que se haga en interaciones de MVPS. Para empezar, aclaremos qué es.
 
-Este es un ejemplo de roadmap de producto realizado dentro del software productboard.
+Este es un ejemplo de roadmap de producto realizado dentro del software productboard:
 
 ![Product_Roadmap](./assets/roadmap-board-screen.png)
 
-Aquí terminá el trabajo del Product Manager y comienza el del Product Designer, aunque oviamente el Product Manager seguirá al tanto de todo el ciclo de desarrollo para comprobar que este yendo todo de la mejor manera posible.
+Aquí termina el trabajo del Product Manager y comienza el del Product Designer. Aunque, obviamente, el Product Manager seguirá al tanto de todo el ciclo de desarrollo para comprobar que esté yendo de la mejor manera posible.
 
 ## Product Designer:
 
-El product designer se encarga de la segunda fase del diseño: definir una funcionalidad y crear el prototipo final. Este prototipo será de alta fidelidad (High Fidelity) y se le entregará al equipo de desarrollo para que lo implemente. P.D: No cambies un prototipo final al no ser que quieras que algún frontend tire tu ordenador por la ventana un martes por la mañana.
+El Product Designer se encarga de la segunda fase del diseño: definir una funcionalidad y crear el prototipo final. Este prototipo será de alta fidelidad (High Fidelity) y se le entregará al equipo de desarrollo para que lo implemente. P.D: No cambies un prototipo final, a no ser que quieras que algún frontend tire tu ordenador por la ventana un martes por la mañana.
 
-Las fases de este proceso son 4:
+Las fases de este proceso son cuatro:
 
-1. Research e Inspiración: donde se tratará de buscar aplicaciones con funcionalidades parecidas, diseños ya echos por otros... (Dribbble es la herramienta que mas se usa para esta fase)
-2. Crear Wireframes: Los wireframes son el esqueleto de nuestro diseño, nos indican la posición de los elementos, los CTAs (call to actions), información contenida dentro de los mismos pero sin ningún tipo de estilo.
-3. Pasar los Wireframes a Mockups: es decir darle estilo a estos Mockups a través del sistema de diseño de nuestra organización
-4. Protipar: craer un prototipo que el equipo de desarrollo usará para comenzar a trabajar.
+1. Research e Inspiración: donde se tratará de buscar aplicaciones con funcionalidades parecidas, diseños ya hechos por otros... (Dribbble es la herramienta que más se usa para esta fase).
+2. Crear Wireframes: Los wireframes son el esqueleto de nuestro diseño, nos indican la posición de los elementos, los CTAs (call to actions); información contenida dentro de los mismos pero sin ningún tipo de estilo.
+3. Pasar los Wireframes a Mockups: es decir, darle estilo a estos Mockups a través del sistema de diseño de nuestra organización
+4. Protipar: crear un prototipo que el equipo de desarrollo usará para comenzar a trabajar.
 
-Todas y cada una de estas fases hay que validarlas con el equipo y con cliente final para asegurar que todo vaya bien. También si quieres poner cosas fancy hablate con el equipo de front para que te digan que pueden o que no pueden hacer, ya que es probable que si les pones a hacer un blur con fueguitos artificiales te acaben crucificando.
+Todas y cada una de estas fases hay que validarlas con el equipo y con el cliente final para asegurarse de que todo va bien. También, si quieres poner cosas fancy, háblate con el equipo de front para que te digan qué pueden o qué no pueden hacer —ya que es probable que si les pones a hacer un blur con fueguitos artificiales te acaben crucificando.
 
 ![Mock_Up](./assets/wireframe-mockup-prototype.png)
 Wireframe, Mockup, Prototipo de Alta Fidelidad.
@@ -389,13 +389,13 @@ las principales subcategorias del mismo son:
 
 Bueno, ahora que tienes todos los conocimientos necesarios te permitiré pasar al siguiente planeta.
 
-Buena suerte viajero!
+¡Buena suerte viajero!
 
 # Frontend: Del prototípo a una aplicación real
 
-pi, pi, pi. Aterrizaje completado!
+Pi, pi, pi ¡Aterrizaje completado!
 
-Anda, mira quien tenemos por ahí, este es el planeta Frontend, ya has usado tu nave espacial por un rato pero a través de la linea de comandos, *susurrando al oído: solo los pibes de sistemas hacen eso, y créeme tu no quieres ser uno de ellos*. En este planeta configuraremos tu nave para que tenga interfaces que te hagan la vida más fácil. La programación de estás interfaces se llama Frontend.
+Anda, mira quién tenemos por ahí. Este es el planeta Frontend, ya has usado tu nave espacial por un rato pero a través de la línea de comandos —*susurrando al oído: solo los pibes de sistemas hacen eso. Créeme tú no quieres ser uno de ellos*—. En este planeta configuraremos tu nave para que tenga interfaces que te hagan la vida más fácil. La programación de estas interfaces se llama Frontend.
 
 Empecemos por lo básico.
 
@@ -403,11 +403,15 @@ Empecemos por lo básico.
 
 El frontend no es nada más que la interfaz de usuario que el cliente ve en su ordenador cuando entra a nuestra página/app web. Esta interfaz la construye el navegador a través del js, html, y css entregado por el servidor. Así es, el navegador no es nada más que un programita que sabe interpretar todos esos archivos. Es más, seguro que eres un curioso y has echo click derecho alguna vez en una página web y le has dado a inspeccionar. Vaya traviesillo.
 
-Si haces eso ahora mismo veras por una parte primero el html de la página, después si clicas en un elemento veras su css, y por último arriba tendrás un apartado que se llama consola, donde podrás ejecutar ordenes en javascript. Así es, los navegadores incluyen dentro un interprete de js. El más popular hoy en día es el V8 creado por google e incluído en google-chrome, opera, brave, ms edge... Este interpreté es el mismo que tiempo después de su creación, un equipo de desarrolladores tubieron una idea curiosa, sacarlo del navegador y distribuírlo como un programa independiente. Y así fué como nació "nodejs".
+Si haces eso, ahora mismo verás: por una parte primero el html de la página, después si clicas en un elemento verás su css, y por último arriba tendrás un apartado que se llama consola, donde podrás ejecutar órdenes en javascript. Exacto, los navegadores incluyen dentro un intérprete de js. 
+
+El más popular hoy en día es el V8, creado por Google e incluido en Google Chrome, Opera, Brave, MS Edge... Este intérprete es el mismo que —tiempo después de su creación— un equipo de desarrolladores lo sacaron del navegador y lo distribuyeron como un programa independiente. Así fue como nació "nodejs".
 
 ## HTML
 
-Bueno volvamos a la conversación. Empecemos hablando de HTML. HTML es un lenguaje de etiquetas es decir, no, no es un lenguaje de programación. Se compone de una seríe de tags que van anidandose unos dentro de otros en forma de árbol como podeis ver en la imagen de abajo. Todos estos tags tienen dos propiedades siempre que nos van a ser de mucha utilidad, una la id, y otra la class (clase). Nota. Id solo puede haber una, pero clases le podemos específicar muchas a nuestro elemento separadas por espacios.
+Volvamos a la conversación. Empecemos hablando de HTML. 
+
+HTML es un lenguaje de etiquetas; es decir, no es un lenguaje de programación. Se compone de una serie de tags que van anidándose unos dentro de otros en forma de árbol, como podéis ver en la imagen de abajo. Todos estos tags tienen dos propiedades siempre que nos van a ser de mucha utilidad: una la id, y otra la class (clase). Nota: Id solo puede haber una, pero clases le podemos especificar muchas a nuestro elemento separadas por espacios.
 
 ```HTML
 <html>
@@ -419,7 +423,7 @@ Bueno volvamos a la conversación. Empecemos hablando de HTML. HTML es un lengua
 <html>
 ```
 
-HTML incluye bastantes tags para hacernos la vida mas fácil, como por ejemplo crear formularios (Una cosa que cómo frontend harás un septillón de veces) a si que usalos que Tim Berners-Lee no los ha puesto ahí para que los ignores.
+HTML incluye bastantes tags para hacernos la vida más fácil, como por ejemplo crear formularios, una cosa que como frontend harás un septillón de veces a si que úsalos; Tim Berners-Lee no los ha puesto ahí para que los ignores.
 
 ```HTML
 <form action="/action_page.php">
