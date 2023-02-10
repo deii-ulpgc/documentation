@@ -107,3 +107,16 @@ Elementos que puede contener una tabla:
 [Página de referencia](https://www.uv.es/~sto/libros/cyberdisk/alice/html/s1_6.htm)
 
 Para ver las distintas funcionalidades que se pueden desarrollar para realizar un formulario puedes revisar el fichero [forms.html](./examples/forms.html), ejecutar el fichero con Live Server, e ir **revisando cada elemento con el inspeccionar** para comprobar las distintas versiones que existen.
+
+# Ejercicio final de HTML
+
+A continuación te proponemos que clones el repositorio de ejercicios, y pruebes a resolver el ejercicio 1.
+
+El repositorio de los ejercicios es [frontend-start-pack](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack). Para clonar el repositorio tendrás que tener git instalado en tu ordenador, y ejecutar `git clone https://github.com/deii-ulpgc-tecnologia/frontend-start-pack.git`.
+
+Aquí encontrarás:
+
+* README.md - Enunciados de los ejercicios
+* Ficheros html base para que desarrolles los ejercicios de forma local (En principio no hay que subir los ejercicios, ya diremos cómo lo pueden subir).
+* Carpeta *styles* con los ficheros css base para desarrollar los ejercicios 1 y 2.
+* Carpeta assets con las fotos necesarias para desarrollar los ejercicios/desarrollar el README.md.

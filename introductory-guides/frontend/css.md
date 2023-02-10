@@ -149,6 +149,14 @@ De esta forma, las cajas se ordenarán tal que verde, azul, gris, rojo, modaro, 
 
 Para hacer las separaciones de los distintos componentes internos se usa **gap**.
 
+## Ejercicio 2 - Desarrollar un formulario con Flex
+
+Ha llegado el momento de enfrentarte a uno de los grandes problemas de los desarrolladores de Front. Este segundo ejercicio trata de desarrolla un formulario con una distribución determinada. Mejor explicado en el [README.md](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack/blob/main/README.md).
+
+![Ejercicio 2 - Formulario](../assets/Ejercicio2.png)
+
+para más información entra al repositorio de los ejercicios: [frontend-start-pack](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack). Asumimos que si has llego hasta aquí ya tienes el repositorio descargado, pero, en caso de que no lo tengas clonado, tendrás que tener git instalado en tu ordenador, y ejecutar `git clone https://github.com/deii-ulpgc-tecnologia/frontend-start-pack.git`.
+
 ## Pseudoclases
 
 [Página de referencia](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes)
@@ -258,4 +266,11 @@ Para utilizar los media querys, la mejor forma es con F12, y usar el icono en la
 
 ![media-query](../assets/query.png)
 
-## SCSS Básico
+
+## Ejercicio 3 - Clon de instagram
+
+En este último ejercicio de HTML + CSS te proponemos un clon simple de instagram, donde tendrás que hacer uso de distintos elementos de html y css para lograr replicar la siguiente imagen. Mejor explicado en el [README.md](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack/blob/main/README.md).
+
+![Ejercicio 2 - Formulario](../assets/InstagramClone.jpg)
+
+Para más información entra al repositorio de los ejercicios: [frontend-start-pack](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack). Asumimos que si has llego hasta aquí ya tienes el repositorio descargado, pero, en caso de que no lo tengas clonado, tendrás que tener git instalado en tu ordenador, y ejecutar `git clone https://github.com/deii-ulpgc-tecnologia/frontend-start-pack.git`.
