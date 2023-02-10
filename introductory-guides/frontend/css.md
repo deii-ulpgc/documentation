@@ -85,6 +85,38 @@ input[type=text]{ *atributo* }
 ```
 
 
+## Unidades
+
+[Página de referencia](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units).
+
+| Unidad       | Nombre                                                                                                                                                                                                                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| cm           | Centímetros                                                                                                                                                                                                                                                                                            |
+| mm           | Milímetros                                                                                                                                                                                                                                                                                             |
+| Q            | Cuartos de milímetros                                                                                                                                                                                                                                                                                  |
+| in           | Pulgadas                                                                                                                                                                                                                                                                                                |
+| pc           | Picas                                                                                                                                                                                                                                                                                                   |
+| pt           | Puntos                                                                                                                                                                                                                                                                                                  |
+| **px** | **Píxeles**                                                                                                                                                                                                                                                                                      |
+|              |                                                                                                                                                                                                                                                                                                         |
+| em           | Tamaño de letra del elemento padre, en el caso de propiedades tipográficas como[`font-size`](https://developer.mozilla.org/es/docs/Web/CSS/font-size) y tamaño de la fuente del propio elemento en el caso de otras propiedades, como [`width`](https://developer.mozilla.org/es/docs/Web/CSS/width). |
+| ex           | Altura x de la fuente del elemento.                                                                                                                                                                                                                                                                     |
+| ch           | La medida de avance (ancho) del glifo "0" de la letra del elemento.                                                                                                                                                                                                                                     |
+| rem          | Tamaño de la letra del elemento raíz.                                                                                                                                                                                                                                                                 |
+| lh           | Altura de la línea del elemento.                                                                                                                                                                                                                                                                       |
+| vw           | 1% del ancho de la ventana gráfica.                                                                                                                                                                                                                                                                    |
+| vh           | 1% de la altura de la ventana gráfica.                                                                                                                                                                                                                                                                 |
+| vmin         | 1% de la dimensión más pequeña de la ventana gráfica.                                                                                                                                                                                                                                               |
+| vmax         | 1% de la dimensión más grande de la ventana gráfica.                                                                                                                                                                                                                                                 |
+
+
+Las que los creadores de este resumen de CSS más hemos usado son:
+
+* px - para letras y tamaños fijos.
+* % - para que tenga un porciento de la página. (no se debería utilizar).
+* vh - para asignar en relación al alto de la página.
+* vw - para asignar en relación al ancho de la página.
+
 ## Bordes y sombras
 
 Lo más básico de cualquier páginas son lo denomidado "tarjetas" o "contenedores".
@@ -292,3 +324,12 @@ En este último ejercicio de HTML + CSS te proponemos un ""clon" simple de insta
 Para más información entra al repositorio de los ejercicios: [frontend-start-pack](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack). Asumimos que si has llego hasta aquí ya tienes el repositorio descargado, pero, en caso de que no lo tengas clonado, tendrás que tener git instalado en tu ordenador, y ejecutar `git clone https://github.com/deii-ulpgc-tecnologia/frontend-start-pack.git`.
 
 <style>#mermaid-1676038372776{font-family:sans-serif;font-size:16px;fill:#333;}#mermaid-1676038372776 .error-icon{fill:#552222;}#mermaid-1676038372776 .error-text{fill:#552222;stroke:#552222;}#mermaid-1676038372776 .edge-thickness-normal{stroke-width:2px;}#mermaid-1676038372776 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1676038372776 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1676038372776 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1676038372776 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1676038372776 .marker{fill:#333333;}#mermaid-1676038372776 .marker.cross{stroke:#333333;}#mermaid-1676038372776 svg{font-family:sans-serif;font-size:16px;}#mermaid-1676038372776 .label{font-family:sans-serif;color:#333;}#mermaid-1676038372776 .label text{fill:#333;}#mermaid-1676038372776 .node rect,#mermaid-1676038372776 .node circle,#mermaid-1676038372776 .node ellipse,#mermaid-1676038372776 .node polygon,#mermaid-1676038372776 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1676038372776 .node .label{text-align:center;}#mermaid-1676038372776 .node.clickable{cursor:pointer;}#mermaid-1676038372776 .arrowheadPath{fill:#333333;}#mermaid-1676038372776 .edgePath .path{stroke:#333333;stroke-width:1.5px;}#mermaid-1676038372776 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1676038372776 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1676038372776 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1676038372776 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1676038372776 .cluster text{fill:#333;}#mermaid-1676038372776 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:sans-serif;font-size:12px;background:hsl(80,100%,96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1676038372776:root{--mermaid-font-family:sans-serif;}#mermaid-1676038372776:root{--mermaid-alt-font-family:sans-serif;}#mermaid-1676038372776 flowchart{fill:apa;}</style>
+
+| `ch`   | La medida de avance (ancho) del glifo "0" de la letra del elemento. |
+| -------- | ------------------------------------------------------------------- |
+| `rem`  | Tamaño de la letra del elemento raíz.                             |
+| `lh`   | Altura de la línea del elemento.                                   |
+| `vw`   | 1% del ancho de la ventana gráfica.                                |
+| `vh`   | 1% de la altura de la ventana gráfica.                             |
+| `vmin` | 1% de la dimensión más pequeña de la ventana gráfica.           |
+| `vmax` | 1% de la dimensión más grande de la ventana gráfica.             |
