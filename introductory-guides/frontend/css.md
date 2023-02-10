@@ -68,6 +68,23 @@ font-style: normal, itálica, oblicua;
 
 text-align: alineado del texto (lo normal suele ser- center, end o justify);
 
+
+## Selectores
+
+Para acceder a los distintos atributos que tienen las clases se puede acceder de distintas maneras.
+
+```
+<div class"cosa"></div>
+.cosa{ *atributos* }
+
+<div id="cosa"></div>
+#cosa{ *atributos* }
+
+<input type="text"/>
+input[type=text]{ *atributo* }
+```
+
+
 ## Bordes y sombras
 
 Lo más básico de cualquier páginas son lo denomidado "tarjetas" o "contenedores".
@@ -75,8 +92,6 @@ Lo más básico de cualquier páginas son lo denomidado "tarjetas" o "contenedor
 [Página para generar bordes estéticos]([https://html-css-js.com/css/generator/border-outline/](https://html-css-js.com/css/generator/border-outline/)).
 
 [Página para generar sombras]([https://www.cssmatic.com/box-shadow](https://www.cssmatic.com/box-shadow)).
-
-## Espaciados
 
 ### Márgenes
 
@@ -268,7 +283,6 @@ Para utilizar los media querys, la mejor forma es con F12, y usar el icono en la
 
 ![media-query](../assets/query.png)
 
-
 ## Ejercicio 3 - Clon de instagram
 
 En este último ejercicio de HTML + CSS te proponemos un ""clon" simple de instagram, donde tendrás que hacer uso de distintos elementos de html y css para lograr replicar la siguiente imagen. Mejor explicado en el [README.md](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack/blob/main/README.md).
@@ -276,3 +290,5 @@ En este último ejercicio de HTML + CSS te proponemos un ""clon" simple de insta
 ![Ejercicio 2 - Formulario](../assets/InstagramClone.jpg)
 
 Para más información entra al repositorio de los ejercicios: [frontend-start-pack](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack). Asumimos que si has llego hasta aquí ya tienes el repositorio descargado, pero, en caso de que no lo tengas clonado, tendrás que tener git instalado en tu ordenador, y ejecutar `git clone https://github.com/deii-ulpgc-tecnologia/frontend-start-pack.git`.
+
+<style>#mermaid-1676038372776{font-family:sans-serif;font-size:16px;fill:#333;}#mermaid-1676038372776 .error-icon{fill:#552222;}#mermaid-1676038372776 .error-text{fill:#552222;stroke:#552222;}#mermaid-1676038372776 .edge-thickness-normal{stroke-width:2px;}#mermaid-1676038372776 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1676038372776 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1676038372776 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1676038372776 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1676038372776 .marker{fill:#333333;}#mermaid-1676038372776 .marker.cross{stroke:#333333;}#mermaid-1676038372776 svg{font-family:sans-serif;font-size:16px;}#mermaid-1676038372776 .label{font-family:sans-serif;color:#333;}#mermaid-1676038372776 .label text{fill:#333;}#mermaid-1676038372776 .node rect,#mermaid-1676038372776 .node circle,#mermaid-1676038372776 .node ellipse,#mermaid-1676038372776 .node polygon,#mermaid-1676038372776 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1676038372776 .node .label{text-align:center;}#mermaid-1676038372776 .node.clickable{cursor:pointer;}#mermaid-1676038372776 .arrowheadPath{fill:#333333;}#mermaid-1676038372776 .edgePath .path{stroke:#333333;stroke-width:1.5px;}#mermaid-1676038372776 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1676038372776 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1676038372776 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1676038372776 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1676038372776 .cluster text{fill:#333;}#mermaid-1676038372776 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:sans-serif;font-size:12px;background:hsl(80,100%,96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1676038372776:root{--mermaid-font-family:sans-serif;}#mermaid-1676038372776:root{--mermaid-alt-font-family:sans-serif;}#mermaid-1676038372776 flowchart{fill:apa;}</style>
