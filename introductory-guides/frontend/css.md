@@ -145,7 +145,6 @@ Cada elemento interno del flex se puede controlar haciendo uso de `order: n`.
 
 De esta forma, las cajas se ordenarán tal que verde, azul, gris, rojo, modaro, rosa. Da igual en qué orden coloquemos las distintas cajas en el HTML.
 
-
 ### Distancias
 
 Para hacer las separaciones de los distintos componentes internos se usa **gap**.
@@ -184,7 +183,7 @@ Las pseudoclases más usadas son:
 
 [CSS](./examples/css-form.html)[.html](./examples/css-form.html)
 
-## Media Querys
+## Media Queries
 
 [Página de referencia](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
 

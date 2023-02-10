@@ -106,4 +106,4 @@ Elementos que puede contener una tabla:
 
 [Página de referencia](https://www.uv.es/~sto/libros/cyberdisk/alice/html/s1_6.htm)
 
-Acceder a [prueba de formularios](./examples/forms.html) para ver mejor el funcionamiento de los formularios.
+Para ver las distintas funcionalidades que se pueden desarrollar para realizar un formulario puedes revisar el fichero [forms.html](./examples/forms.html), ejecutar el fichero con Live Server, e ir **revisando cada elemento con el inspeccionar** para comprobar las distintas versiones que existen.
