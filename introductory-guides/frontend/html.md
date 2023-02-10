@@ -1,8 +1,21 @@
-# ¿Cómo empezar con HTML?
+# ¿Qué es HTML?
 
 [Página de referencia](https://en.wikipedia.org/wiki/HTML_element)
 
+[Wikipedia](https://en.wikipedia.org/wiki/HTML_element)
+
+"**HTML** (Lenguaje de Marcas de Hipertexto, del inglés  *HyperText Markup Language* ) es el componente más básico de la Web. Define el significado y la estructura del contenido web.
+
+"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la « *World Wide Web* » (Red Informática Mundial)." - MDNWeb
+
 # Etiquetas
+
+Una etiqueta se basa en "<", texto, ">", si tiene un cierre acabará de forma "<", texto, ">"; si no tiene cierre, es conveniente que la etiqueta sea "<" texto "/" ">".
+
+```apache
+<div></div> 	#Necesita etiqueta de cierre.
+<input/> 	#Solo es necesario 1 etiqueta.
+```
 
 ## Etiquetas estructurales
 
@@ -47,7 +60,7 @@ A continuación, clicaremos sobre el fichero `index.html` y le daremos a `Open w
 ## Etiquetas básicas del Body
 
 Dentro de todas las etiquetas que pueden existir, las más útiles son las siguientes:
-![E](./assets/estructura_html.jpg)
+![Etiquetas](../assets/estructura_html.jpg)
 
 ### Estructuras básicas
 

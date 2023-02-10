@@ -1,6 +1,8 @@
-# ¿Cómo empezar con CSS?
+# ¿Qúe es CSS?
 
-(Introducción to guapa que ya pensaré en otro momento)
+**Hojas de Estilo en Cascada** (del inglés  ***C**ascading **S**tyle **S**heets* ) o **CSS** es el lenguaje de [estilos](https://developer.mozilla.org/es/docs/Web/API/StyleSheet) utilizado para describir la presentación de documentos [HTML](https://developer.mozilla.org/es/docs/Web/HTML) o [XML (en-US)](https://developer.mozilla.org/en-US/docs/Web/XML "Currently only available in English (US)") (incluyendo varios lenguajes basados en XML como [SVG](https://developer.mozilla.org/es/docs/Web/SVG), [MathML](https://developer.mozilla.org/es/docs/Web/MathML) o [XHTML](https://developer.mozilla.org/es/docs/Glossary/XHTML)). CSS describe como debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
+
+### Truquitos
 
 Una de las mejores herramientas para ir comprobando poco a poco los distintos cambios es presionar F12 estando en el navegador, e ir cambiando las distintas clases ahí. Una vez se está conforme con el resultado copiar los cambios al código.
 
@@ -70,9 +72,9 @@ text-align: alineado del texto (lo normal suele ser- center, end o justify);
 
 Lo más básico de cualquier páginas son lo denomidado "tarjetas" o "contenedores".
 
-Generador de bordes: [https://html-css-js.com/css/generator/border-outline/](https://html-css-js.com/css/generator/border-outline/)
+[Página para generar bordes estéticos]([https://html-css-js.com/css/generator/border-outline/](https://html-css-js.com/css/generator/border-outline/)).
 
-Generador de sombras[:]([https://html-css-js.com/css/generator/box-shadow/](https://html-css-js.com/css/generator/border-outline/)) [https://www.cssmatic.com/box-shadow](https://www.cssmatic.com/box-shadow)
+[Página para generar sombras]([https://www.cssmatic.com/box-shadow](https://www.cssmatic.com/box-shadow)).
 
 ## Espaciados
 
@@ -100,9 +102,9 @@ De la misma forma, se puede modificar 1 solo lado del padding haciendo uso de pa
 
 ## Grid y Flex
 
-Página para probar Grid: Grid Garden: [https://cssgridgarden.com/#es]([https://cssgridgarden.com/#es]()).
+Página para probar Grid: [Grid Garden]([https://cssgridgarden.com/#es]([https://cssgridgarden.com/#es]())).
 
-Página para probar Flex: Flexbox Froggy: [https://flexboxfroggy.com/#es](https://flexboxfroggy.com/#es).
+Página para probar Flex: [Flexbox Froggy]([https://flexboxfroggy.com/#es](https://flexboxfroggy.com/#es)).
 
 ### Grid
 
@@ -269,7 +271,7 @@ Para utilizar los media querys, la mejor forma es con F12, y usar el icono en la
 
 ## Ejercicio 3 - Clon de instagram
 
-En este último ejercicio de HTML + CSS te proponemos un clon simple de instagram, donde tendrás que hacer uso de distintos elementos de html y css para lograr replicar la siguiente imagen. Mejor explicado en el [README.md](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack/blob/main/README.md).
+En este último ejercicio de HTML + CSS te proponemos un ""clon" simple de instagram, donde tendrás que hacer uso de distintos elementos de html y css para lograr replicar la siguiente imagen. Mejor explicado en el [README.md](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack/blob/main/README.md).
 
 ![Ejercicio 2 - Formulario](../assets/InstagramClone.jpg)
 
