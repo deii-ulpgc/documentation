@@ -6,9 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
         initial-scale=1.0">
-    <title>Document</title>
+    <title>Cosas básicas</title>
+    <style>
+        .HTML{text-align: center; margin: 0;}
+        h1.HTML{font-size: 50px;}
+        h2.HTML{font-size: 40px;}
+        body{padding: 0; margin: 10px;}
+    </style>
 </head>
 <body>
+    <h1 class="HTML">Apartado de HTML</h1>
+    <hr/>
+    <!-- Encabezados -->
+    <h2 class="HTML">Encabezados</h2>
     <h1>Encabezado 1</h1>
     <h2>Encabezado 2</h2>
     <h3>Encabezado 3</h3>
@@ -16,7 +26,14 @@
     <h5>Encabezado 5</h5>
     <h6>Encabezado 6</h6>
     <p>párrafo</p>
-    <hr> <!-- Línea horizontal -->
+    <hr/><!-- Línea horizontal -->
+
+    <h2 class="HTML">Enlace</h2>
+    <p>a href="./forms.html">Enlace a formularios /a></p>
+    <a href="./forms.html">Enlace a formularios</a>
+    <hr> 
+    <h2 class="HTML">Listas</h2>
+    <!-- Lista no ordenada -->
     <p>Lista no ordenada</p>
     <ul>
         <li>Elemento no ordenado 1</li>
@@ -24,16 +41,26 @@
         <li>Elemento no ordenado 3</li>
     </ul>
     <br> <!-- Salto de línea -->
+    <!-- Lista ordenada -->
     <p>Lista ordenada</p>
     <ol>
         <li>Elemento ordenado 1</li>
         <li>Elemento ordenado 2</li>
         <li>Elemento ordenado 3</li>
     </ol>
+    
     <hr/>
-    <img src="../Fotos/estructura_html.jpg" alt="estructura_html" width="300px">
-
+    <h2 class="HTML">Imágenes</h2>
+    <!-- Imagen -->
+    <p>img src="../assets/estructura_html.jpg" alt="estructura_html" width="300px"</p>
+    <ul>
+        <li>src(source): lugar donde se ubica la imagen</li>
+        <li>alt(alternative): texto alternativo si no se encuentra la imagen</lñi>
+        <li>width: ancho; height: alto; Mejor no usarlos así y colocarlo todo en el CSS.</li>
+    </ul>
+    <img src="../assets/estructura_html.jpg" alt="estructura_html" width="300px">
     <hr/>
+    <h2 class="HTML">Tabla</h2>
     <table>
         <caption>Prueba</caption>
         <thead>
@@ -63,6 +90,5 @@
             </tr>
         </tfoot>
     </table>
-    <a href="./forms.html">Enlace a formularios</a>
 </body>
 </html>
