@@ -203,6 +203,9 @@ const nuevoArray = personas.map(persona => `${persona.nombre} tiene ${persona.ed
 Bastante sencillo ¿No?
 
 **Otras funciones útiles**:
-- Filter
-- Reduce
+- Filter x 
+- Reduce 
+- Find x
+- Sort x 
+- forEach
 
