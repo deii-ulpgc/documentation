@@ -11,8 +11,9 @@ Muchos os preguntaréis, ¿Por qué un repo diferente solo para documentación? 
 - **Guía del desarrollador web galáctico 🌌 :** El mejor curso introductorio al desarrollo web de toda la Galaxia IC352. 
 [Enlace](./introductory-guides/guia-del-web-developer-galactico.md)
 
-<!--
-- **Guía del frontend rockstar 🎸 :** Conviértete en el rockstar de tu empresa sin necesidad de aprender a tocar la guitarra.
 
+- **Guía del frontend rockstar 🎸 :** Conviértete en el rockstar de tu empresa sin necesidad de aprender a tocar la guitarra. [Enlace](./introductory-guides/frontend)
+
+<!--
 - **Guía del backend telépata 🧠**: Acabarás leyéndole la mente al front y devolviéndole el JSON que necesita siempre.
 -->
