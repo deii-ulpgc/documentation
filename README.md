@@ -14,6 +14,7 @@ Muchos os preguntaréis, ¿Por qué un repo diferente solo para documentación? 
 
 - **Guía del frontend rockstar 🎸 :** Conviértete en el rockstar de tu empresa sin necesidad de aprender a tocar la guitarra. [Enlace](./introductory-guides/frontend)
 
+- **Guía del Git poderoso 💪🏼** Se el mejor de tus compañeros usando Git y demuestra tu supremacía. [Enlace](./workflows/git-workflow/intr)
 <!--
 - **Guía del backend telépata 🧠**: Acabarás leyéndole la mente al front y devolviéndole el JSON que necesita siempre.
 -->
