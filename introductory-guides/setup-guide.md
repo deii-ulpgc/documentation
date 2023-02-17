@@ -42,13 +42,23 @@ E instalar la que quieras con:
 ```PowerShell 
 wsl --install -d <DistroName>
 ```
-También puedes instalar una distribución desde la [*Microsoft Store*][2] siempre y cuando hayas instalado WSL, te recomiendo usar el programa [*Windows Terminal*][3] que permite abrir pestañas con distintas herramientas de línea de comandos en la misma sesión, incluido el terminal de Linux de la distribución instalada.
+Recuerda que tras instalar una distribución de Linux, incluso en WSL, deberás **crear un usuario con su propia contraseña**. Para entrar desde el *Simbolo de Sistema* o el terminal de *PowerShell* puedes ejecutar el siguiente comando:
+```PowerShell
+wsl.exe -d <name_of_the_distribution>
+```
+Si no sabes el nombre exacto de la distribución instalada, puedes ejecutar:
+```PowerShell
+wsl.exe --list
+```
+Y sustituir ```<name_of_the_distribution>``` por el nombre de la distribución instalada.
+
+También puedes instalar una distribución desde la [*Microsoft Store*][2] siempre y cuando hayas instalado WSL, que viene con su propio terminal accesible desde el menú de Inicio, pero te recomiendo usar el programa [*Windows Terminal*][3] que permite abrir pestañas con distintas herramientas de línea de comandos en la misma sesión, incluido el terminal de Linux de la distribución instalada.
 
 A partir de ahora, deberás acceder a tu distribución de Linux para seguir la guía. 
 
    ## Selección de versión de NodeJS mediante nvm
 
-Gracias a **nvm (Node Version Manager)** podemos elegir en qué versión de NodeJS trabajaremos desde nuestra máquina, si ya tienes **NodeJS** instalado no te preocupes, puedes alternar entre versiones en cualquier momento sin ningún problema.
+Gracias a **nvm (Node Version Manager)** podemos elegir en qué versión de **NodeJS** trabajaremos desde nuestra máquina, si ya tienes éste instalado no te preocupes, puedes alternar entre versiones en cualquier momento sin ningún problema.
 
 Para instalar **nvm** en tu sistema operativo Linux o distribución del subsistema de Windows, puedes descargar y ejecutar el script de instalación con cualquiera de los siguientes comandos:
 
@@ -70,7 +80,7 @@ En caso de que no te aparezca, prueba a cerrar el terminal, abrir uno nuevo y vo
 Una vez tenemos **nvm** instalado, necesitas instalar la versión de NodeJS con la que trabajaremos a lo largo del proyecto, la versión 18.14.0 . Para ello ejecutaremos el siguiente comando:
 
 ```bash
-$ nvm install 18.14.0
+$ nvm install Hydrogen # v18.14.1
 ```
 
 Puedes confirmarlo ejecutando a continuación:
@@ -79,16 +89,16 @@ Puedes confirmarlo ejecutando a continuación:
 $ node --version
 ```
 
-Cuya salida debería ser ```v18.14.0```. En caso de que tuvieras instalada otra versión de node, puedes ejecutar el siguiente comando para cambiar a la versión deseada dentro del terminal actual:
+Cuya salida debería ser ```v18.14.1```. En caso de que tuvieras instalada otra versión de node, puedes ejecutar el siguiente comando para cambiar a la versión deseada dentro del terminal actual:
 
 ```bash
-$ nvm use 18.14.0
+$ nvm use Hydrogen
 ```
 
 Y establecerlo como predeterminado para todos los terminales con:
 
 ```bash
-$ nvm alias default 18.14.0
+$ nvm alias default Hydrogen
 ```
 
 A partir de ahora, todos los terminales que inicies cargarán la versión 18.14.0, puedes cambiar a cualquier otra version con el comando ```nvm use node```, sustituyendo ````node``` por el número de la versión o su nombre en caso de que lo tenga. 
@@ -185,11 +195,11 @@ Si bien lo mejor es que te adaptes a la linea de comandos y aquí siempre tendr�
 
 Puesto que ahora tienes todas las herramientas para trabajar como parte de tu equipo de Frontend/Backend, te dejo a continuación, varias instrucciones que te harán falta para tus pruebas de desarrollo.
 
-Gracias a **Docker** puedes generar un contenedor a partir de una imágen que iniciará la página web desde el entorno de desarrollo, esto es posible con ```docker compose up .``` una vez que hayas clonado el repositorio correspondiente a la página web solo tendrás que ejecutar este comando desde tu terminal, situado en el directorio donde se encuentra el repositorio clonado.
+Gracias a **Docker** puedes generar un contenedor a partir de una imágen que iniciará la página web desde el entorno de desarrollo, una vez que hayas clonado el repositorio correspondiente a la página web, situandote en el directorio donde se encuentra el repositorio clonado ejecuta ```npm install``` y, a continuación, el comando ```docker compose up```. Esto generará el contenedor que contiene la página web, si haces alguna modificación en el archivo *src/app/page.tsx* y guardas los cambios, estos deberían reflejarse en la página web en un periodo de máximo 5 segundos.
 
 Si tuviste que instalar y configurar WSL, probablemente no quieras usar vim desde la terminal, pero puedes usar el comando ```code .``` desde el directorio de trabajo para abrir [*Visual Studio Code*][5] en caso de que lo tengas instalado.
 
-Si has iniciado un contenedor con el comando [```docker run [IMAGE]```] tendrás una imagen descargada, puedes ver los contenedores generados con el comando [```docker ps -a```] y eliminarlos con [```docker rm [SHA]```] escribiendo tras ```rm``` los 4 primeros dígitos de su ID, para ver las imágenes puedes hacer [```docker images```] y eliminarlas también escribiendo [```docker rmi [IMAGE]```] especificando su nombre.
+Si has iniciado un contenedor con el comando ```docker run [IMAGE]``` tendrás una imagen descargada, puedes ver los contenedores generados con el comando ```docker ps -a``` y eliminarlos con ```docker rm [SHA-256]``` escribiendo tras ```rm``` los 4 primeros dígitos o el SHA-256 completo. Este código sirve como identificador de las imágenes y contenedores generados. Para ver las imágenes puedes hacer ```docker images``` y eliminarlas también escribiendo ```docker rmi [IMAGE]``` especificando su nombre.
 
 
 
