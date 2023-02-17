@@ -44,11 +44,11 @@ wsl --install -d <DistroName>
 ```
 Recuerda que tras instalar una distribución de Linux, incluso en WSL, deberás **crear un usuario con su propia contraseña**. Para entrar desde el *Simbolo de Sistema* o el terminal de *PowerShell* puedes ejecutar el siguiente comando:
 ```PowerShell
-wsl.exe -d <name_of_the_distribution>
+wsl -d <name_of_the_distribution>
 ```
 Si no sabes el nombre exacto de la distribución instalada, puedes ejecutar:
 ```PowerShell
-wsl.exe --list
+wsl --list
 ```
 Y sustituir ```<name_of_the_distribution>``` por el nombre de la distribución instalada.
 
