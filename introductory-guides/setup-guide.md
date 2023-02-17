@@ -31,6 +31,8 @@ Suponiendo que tienes la última versión de Windows 10 o Windows 11, solo tiene
 ```PowerShell
 wsl --install
 ```
+(Deberás reiniciar el ordenador tras la instalación)
+
 A continuación, podrás instalar una distribución de las posibles que puedes listar con:
 
 ```PowerShell
@@ -129,7 +131,7 @@ $ sudo apt-get install \
    ca-certificates \
    curl \
    gnupg \
-   lab-release
+   lsb-release
 ```
 A continuación, añadimos las claves GPG oficiales de **Docker:**
 ```bash
@@ -164,7 +166,7 @@ Entonces, tendrás que entrar en las entrañas de tu máquina e iniciar los serv
 $ sudo service docker start
 ```
 
-Si quieres que el servicio se inicie junto al sistema desde que enciendes el ordenador, haz lo siguiente:
+Si tienes Linux nativo y quieres que el servicio se inicie junto al sistema desde que enciendes el ordenador, haz lo siguiente:
 ```bash
 $ sudo systemctl enable docker.service
 $ sudo systemctl enable containerd.service
