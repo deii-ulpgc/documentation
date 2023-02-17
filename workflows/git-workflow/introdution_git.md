@@ -38,3 +38,7 @@ Tendremos 4 tipos de ramas:
   * Se hará una rama de hotfix para solucionar el problema.
   * Se solucionará lo más rápido posible.
   * Se hará **merge/pull request** a **main/release** con los cambios ya hechos.
+
+## Pequeño ejemplo de funcionamiento ilustrado
+
+![img](https://file+.vscode-resource.vscode-cdn.net/d%3A/Repositorios/documentation/workflows/assets/sprint1.png)![img](../assets/sprint1.png)
