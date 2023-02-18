@@ -65,7 +65,24 @@ Tendremos 6 tipos de ramas:
 
 
 
-## Pequeños ejemplo de funcionamiento ilustrado
+# Pequeños ejemplo de funcionamiento ilustrado
+[Sitio donde se encuentran los esquemas](https://www.figma.com/file/3s2bq7QCris0rxbC4yHke9/GitFlow-Explaining?node-id=0%3A1&t=1Tb45vD5aazSZJzJ-1)
+## Cosas que solo courrirán 1 vez
+![](../assets/b1.png)
+
+## Workflow de las ramas Develop y features
+![](../assets/b2.png)
+![](../assets/b3.png)
+## Se encuentra un bug en develop
+![](../assets/b4.png)
+## ¿Qué hacer cuando acaba un sprint?
+![](../assets/m1.png)
+## LLegamos a una versión estable, ¿Qué hacemos?
+![](../assets/m2.png)
+## Se encuentra un bug en Release, ¿Qué hacemos? ☠️
+![](../assets/m3.png)
+## Ejemplo completo con distintos casos
+En mi opinión, esto sí sería mejor verlo directamente dentro de Figma ([Enlace](https://www.figma.com/file/3s2bq7QCris0rxbC4yHke9/GitFlow-Explaining?node-id=0%3A1&t=1Tb45vD5aazSZJzJ-1)), ya que es un transcurso.
 
 ![img](../assets/sprint1.png)
 ![img](../assets/sprint2.png)
