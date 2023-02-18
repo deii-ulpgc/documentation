@@ -1,3 +1,6 @@
+   ### Autor:
+   - Alejandro Viera Ruiz (@AVR21)   
+   
    # GUÍA DE CONFIGURACIÓN DEL ENTORNO DE DESARROLLO 
 
    ## Índice:
