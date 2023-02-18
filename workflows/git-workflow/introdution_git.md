@@ -16,7 +16,7 @@ Siempre hay que tener cuidado con git, **¡Así que asegúrate de hacer commits 
 
 # ¿Qué es Git Workflow?
 
-Para que se hagan una idea, Git Workflow es un conjunto de prácticas y procesos que implementa en un proyecto utilizando el sistema de control Git.
+Para que se hagan una idea, un git workflow es un conjunto de prácticas y procesos que implementa en un proyecto utilizando el sistema de control Git.
 
 # Nuestro Git Workflow
 
