@@ -86,3 +86,5 @@ En mi opinión, esto sí sería mejor verlo directamente dentro de Figma ([Enlac
 
 ![img](../assets/sprint1.png)
 ![img](../assets/sprint2.png)
+![img](../assets/sprint3.png)
+![img](../assets/sprint_error.png)
