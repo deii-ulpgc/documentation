@@ -4,13 +4,16 @@ Autores:
 
 # La guía del Git poderoso 💪🏼
 
-Bienvenido a la guía que nunca hará merge con tus emociones, pero que si hablará sobre Git y más en concreto en nuestro Git Workflow.
+Bienvenido a la guía que nunca hará merge con tus emociones, pero que si hablará sobre Git y más en concreto de nuestro Git Workflow.
 
-Por si acaso lleves toda tu vida en una cueva, Git es como una caja de juguetes para desarrolladores de software: puedes agregar, quitar, mover y cambiar todo lo que quieras, pero si no tienes cuidado, puedes terminar con una montaña de piezas desordenadas que no encajan.
+Por si acaso lleves toda tu vida en una cueva, Git es como la opeción de "Guardar" de un videojuego para los desarrolladores de software: puedes guardar, borrar y cargar partida todo lo que quieras, pero si no tienes cuidado, puedes terminar volviendo a empezar de cero una misión o incluso la partida por no llevar un orden.
 
-Siempre hay que tener cuidado con git, **¡Así que asegúrate de hacer commits temprano y a menudo, mantén un historial limpio y ordenado, y siempre recuerda hacer push antes de irte a casa!**
+Siempre hay que tener cuidado con git, **¡Así que asegúrate de hacer commits temprano y a menudo, mantén un historial limpio y ordenado, y siempre recuerda hacer push antes de irte de casa!**
 
 # Índice
+1. [¿Qué es Git Workflow?](#¿qué-es-git-workflow)
+2. [Nuestro Git Workflow](#nuestro-git-workflow)
+3. [Pequeños ejemplos de ilustración](#pequeños-ejemplo-de-funcionamiento-ilustrado)
 
 <br>
 
@@ -20,7 +23,7 @@ Para que se hagan una idea, un git workflow es un conjunto de prácticas y proce
 
 # Nuestro Git Workflow
 
-En esta guía se da por hecho que se manejan a nivel principiante en git y si por algun casual no es asi pueden mirar este [enlace de referencia](https://git-scm.com/docs).
+En esta guía se da por hecho que se manejan a nivel principiante en git y si por algún casual no es así pueden mirar este [enlace de referencia](https://git-scm.com/docs).
 
 Tendremos 6 tipos de ramas:
 
