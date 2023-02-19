@@ -6,7 +6,7 @@ Autores:
 
 Bienvenido a la guía que nunca hará merge con tus emociones, pero que si hablará sobre Git y más en concreto de nuestro Git Workflow.
 
-Por si acaso lleves toda tu vida en una cueva, Git es como la opeción de "Guardar" de un videojuego para los desarrolladores de software: puedes guardar, borrar y cargar partida todo lo que quieras, pero si no tienes cuidado, puedes terminar volviendo a empezar de cero una misión o incluso la partida por no llevar un orden.
+Por si acaso lleves toda tu vida en una cueva, Git es como la opción de "Guardar" de un videojuego para los desarrolladores de software: puedes guardar, borrar y cargar partida todo lo que quieras, pero si no tienes cuidado, puedes terminar volviendo a empezar de cero una misión o incluso la partida por no llevar un orden.
 
 Siempre hay que tener cuidado con git, **¡Así que asegúrate de hacer commits temprano y a menudo, mantén un historial limpio y ordenado, y siempre recuerda hacer push antes de irte de casa!**
 
