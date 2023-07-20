@@ -231,3 +231,4 @@ Si has iniciado un contenedor con el comando ```docker run [IMAGE]``` tendrás u
 [3]:https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=es-es&gl=es
 [4]:https://docs.docker.com/desktop/install/linux-install/
 [5]:https://code.visualstudio.com/Download
+[6]:https://github.com/deii-ulpgc-tecnologia/documentation/blob/systems-docs/introductory-guides/setup-install.sh
