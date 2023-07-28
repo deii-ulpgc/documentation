@@ -7,8 +7,9 @@
    
    - [Introducción](#introducción)
    - [Instalación de WSL](#instalación-de-wsl-windows-subsystem-for-linux)
-   - [Selección de versión de node mediante nvm](#selección-de-versión-de-node-mediante-nvm)
+   - [Selección de versión de NodeJs mediante nvm](#selección-de-versión-de-nodejs-mediante-nvm)
    - [Configuración de Docker](#configuración-de-docker)
+   - [Uso de script alternativo para NodeJs y Docker](#uso-de-script-alternativo-para-nodejs-y-docker)
    - [Conclusión](#conclusión)
 
    ## Introducción 
@@ -196,6 +197,23 @@ Si se ejecuta correctamente, ya estás preparado.
 
 Si bien lo mejor es que te adaptes a la linea de comandos y aquí siempre tendrás todo lo que necesitas para usar **Docker** en tu terminal, puedes descargarte [Docker Desktop][4] si eres usuario nativo de Linux pero en esta guía no explicaré como usarlo. 
 
+   ## Uso de script alternativo para NodeJs y Docker
+
+Para aquellos que lo prefieran, [*aquí*][6] es posible descargar un script que instala en vuestra máquina Linux o servidor WSL, los programas mencionados anteriormente. Para ello solo hace falta ejecutar el siguiente comando desde la ubicación del archivo:
+
+```bash
+$ ./setup-install.sh
+```
+
+Si te encuentras en el entorno WSL puedes acceder desde tu distribución a cualquier disco de Windows desde la carpeta ```mnt/```, alternativamente puedes arrastrar el archivo desde el explorador de archivos accediendo a la carpeta Linux que se generó una vez instalaste tu primera distribución (justo debajo de redes).
+
+En caso de que el archivo no tenga permisos de ejecución, puedes modificarlos con la siguiente instrucción:
+
+```bash
+$ sudo chmod +x setup-install.sh
+```
+
+
    ## Conclusión
 
 Puesto que ahora tienes todas las herramientas para trabajar como parte de tu equipo de Frontend/Backend, te dejo a continuación, varias instrucciones que te harán falta para tus pruebas de desarrollo.
@@ -213,3 +231,4 @@ Si has iniciado un contenedor con el comando ```docker run [IMAGE]``` tendrás u
 [3]:https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=es-es&gl=es
 [4]:https://docs.docker.com/desktop/install/linux-install/
 [5]:https://code.visualstudio.com/Download
+[6]:https://github.com/deii-ulpgc-tecnologia/documentation/blob/systems-docs/introductory-guides/setup-install.sh
