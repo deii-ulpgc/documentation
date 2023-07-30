@@ -7,9 +7,9 @@
    
    - [Introducción](#introducción)
    - [Instalación de WSL](#instalación-de-wsl-windows-subsystem-for-linux)
+   - [Uso de script alternativo para NodeJs y Docker](#uso-de-script-alternativo-para-nodejs-y-docker)
    - [Selección de versión de NodeJs mediante nvm](#selección-de-versión-de-nodejs-mediante-nvm)
    - [Configuración de Docker](#configuración-de-docker)
-   - [Uso de script alternativo para NodeJs y Docker](#uso-de-script-alternativo-para-nodejs-y-docker)
    - [Conclusión](#conclusión)
 
    ## Introducción 
@@ -18,7 +18,7 @@ Bueno, si estás aqui supongo que ya sabrás de que va el rollo, sino, aquí tie
 
 Sin más rodeos, voy a explicarte cómo entrar en la atmósfera de la forma más sencilla posible. Necesitarás los siguientes programas:
 
-- **nvm**: Con este programa podrás elegir qué versión de **NodeJS** usar en tu máquina, en este caso, la versión 18.14.0 .
+- **nvm**: Con este programa podrás elegir qué versión de **NodeJS** usar en tu máquina, en este caso, la versión LTS(Hydrogen).
 - **Docker**: Gracias a este programa montaremos los *contenedores* que soportarán la estructura de la página web .
 
 Por desgracia para ti, astro genérico de Windows, no será tán fácil como instalarte los programas que te acabo de mencionar, ya que vas a necesitar que tu nave funcione con Linux para que tu viaje vaya como la seda. Para ello, te voy a enseñar como instalar tu propio subsistema de Linux en Windows. 
@@ -62,6 +62,33 @@ También puedes instalar una distribución desde la [*Microsoft Store*][2] siemp
 
 A partir de ahora, deberás acceder a tu distribución de Linux para seguir la guía. 
 
+   ## Uso de script alternativo para NodeJs y Docker
+
+Para aquellos que lo prefieran, es posible descargar un script que instala **NodeJS** y **Docker** en vuestra máquina Linux o servidor WSL, usando cualquiera de los siguientes comandos:
+
+(Necesitas instalar cURL o Wget para usar los comandos respectivamente)
+
+```bash
+curl -o setup-install.sh https://raw.githubusercontent.com/deii-ulpgc-tecnologia/documentation/main/introductory-guides/setup-install.sh
+```
+```bash
+wget https://raw.githubusercontent.com/deii-ulpgc-tecnologia/documentation/main/introductory-guides/setup-install.sh
+```
+
+Asegurate de que el archivo recién descargado tenga permisos de ejecución, en caso contrario, puedes concederlos con la siguiente instrucción:
+
+```bash
+sudo chmod +x setup-install.sh
+```
+
+Finalmente, ejecuta el script desde la ubicación en la que se encuentra para que haga su magia:
+
+```bash
+./setup-install.sh
+```
+
+Una vez finalizado el script ya tendrás el gestor **nvm (Node Version Manager)** con el que se ha instalado la versión LTS de **NodeJS** (Hydrogen - v18.1X) y **Docker**. Recuerda que para este último es necesario hacer *sudo* con cada instrucción, pero puedes añadirlo a un grupo para omitir la constante llamada a superusuario, siguiendo los últimos pasos de la guía en la [*sección correspondiente.*](#añadir-docker-a-un-grupo)
+
    ## Selección de versión de NodeJS mediante nvm
 
 Gracias a **nvm (Node Version Manager)** podemos elegir en qué versión de **NodeJS** trabajaremos desde nuestra máquina, si ya tienes éste instalado no te preocupes, puedes alternar entre versiones en cualquier momento sin ningún problema.
@@ -71,11 +98,11 @@ Para instalar **nvm** en tu sistema operativo Linux o distribución del subsiste
 (Necesitas instalar cURL o Wget para usar los comandos respectivamente)
 
 ```bash
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
  ```
 
 ```bash
-$ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
 Para confirmar que **nvm** se ha instalado correctamente puedes ejecutar ``` command -v nvm``` y si te imprime ```nvm```, la instalación ha sido un éxito.
@@ -86,25 +113,25 @@ En caso de que no te aparezca, prueba a cerrar el terminal, abrir uno nuevo y vo
 Una vez tenemos **nvm** instalado, necesitas instalar la versión de NodeJS con la que trabajaremos a lo largo del proyecto, la versión 18.14.0 . Para ello ejecutaremos el siguiente comando:
 
 ```bash
-$ nvm install Hydrogen # v18.14.1
+nvm install Hydrogen # v18.14.1
 ```
 
 Puedes confirmarlo ejecutando a continuación:
 
 ```bash
-$ node --version
+node --version
 ```
 
 Cuya salida debería ser ```v18.14.1```. En caso de que tuvieras instalada otra versión de node, puedes ejecutar el siguiente comando para cambiar a la versión deseada dentro del terminal actual:
 
 ```bash
-$ nvm use Hydrogen
+nvm use Hydrogen
 ```
 
 Y establecerlo como predeterminado para todos los terminales con:
 
 ```bash
-$ nvm alias default Hydrogen
+nvm alias default Hydrogen
 ```
 
 A partir de ahora, todos los terminales que inicies cargarán la versión 18.14.0, puedes cambiar a cualquier otra version con el comando ```nvm use node```, sustituyendo ````node``` por el número de la versión o su nombre en caso de que lo tenga. 
@@ -120,7 +147,7 @@ Sólo te queda instalar **Docker** en tu nave, gracias al cuál generarás el co
 En caso de que te suene **Docker** pero no estés seguro de tenerlo ya instalado, lo mejor será que te asegures de quitar cualquier paquete relacionada:
 
 ```bash
-$ sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 Una vez hemos confirmado la ausencia de **Docker** en nuestro sistema, podemos proceder a instalarlo. 
 
@@ -129,9 +156,10 @@ La forma que te voy a mostrar, hace uso del repositorio oficial de **Docker**, a
 Para empezar, vamos a actualizar ```apt``` y añadir el repositorio para su uso por ```apt``` a través de HTTPS:
 
 ```bash
-$ sudo apt-get update
-
-$ sudo apt-get install \
+sudo apt-get update
+```
+```bash
+sudo apt-get install \
    ca-certificates \
    curl \
    gnupg \
@@ -139,27 +167,27 @@ $ sudo apt-get install \
 ```
 A continuación, añadimos las claves GPG oficiales de **Docker:**
 ```bash
-$ sudo mkdir -m 0755 -p /etc/apt/keyrings
+sudo mkdir -m 0755 -p /etc/apt/keyrings
 
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
 Y, con el siguiente comando, establecemos el repositorio en cuestión:
 ```bash
-$ echo \
+echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
 Finalmente, actualiza ```apt``` para establecer los cambios, y ya estarás listo:
 ```bash
-$ sudo apt-get update
+sudo apt-get update
 ```
 
 Ahora si, es la hora de instalar **Docker** junto a todos los paquetes que te ayudarán a desarrollar la nueva estelar página web. 
 
 Instala la última versión y todos los paquetes necesarios con el siguiente comando:
 ```bash
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 Normalmente, el servicio de **Docker** inicia automáticamente, sin embargo en caso de que al hacer alguno de los comandos que te presento más adelante aparece este error:
 ```bash
@@ -167,52 +195,37 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 ```
 Entonces, tendrás que entrar en las entrañas de tu máquina e iniciar los servicios de la manera más complicada posible...o también puedes usar esta instrucción:
 ```bash
-$ sudo service docker start
+sudo service docker start
 ```
 
 Si tienes Linux nativo y quieres que el servicio se inicie junto al sistema desde que enciendes el ordenador, haz lo siguiente:
 ```bash
-$ sudo systemctl enable docker.service
-$ sudo systemctl enable containerd.service
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 Si cambias de opinión solo tienes que cambiar ```enable``` por ```disable```.
+
+   ### Añadir Docker a un grupo. 
 
 También es posible que **Docker** solo ejecute las instrucciones desde un usuario root o haciendo ```sudo```, en caso de que no quieras tener que escribir esto último una y otra vez, puedes hacer lo siguiente:
 
 Crear un grupo que permita ejecutar docker con permisos *root:*
 ```bash
-$ sudo groupadd docker
+sudo groupadd docker
 ```
 Añadir tu usuario a este grupo:
 ```bash
-$ sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER
 ```
 Cierra sesión con el usuario en cuestión y vuelve a iniciarla para que surta efecto y listo.
 
 Ahora si, para comprobar que tu máquina esta preparada, ejecuta:
 ```bash
-$ docker run hello-world
+docker run hello-world
 ```
 Si se ejecuta correctamente, ya estás preparado.
 
 Si bien lo mejor es que te adaptes a la linea de comandos y aquí siempre tendrás todo lo que necesitas para usar **Docker** en tu terminal, puedes descargarte [Docker Desktop][4] si eres usuario nativo de Linux pero en esta guía no explicaré como usarlo. 
-
-   ## Uso de script alternativo para NodeJs y Docker
-
-Para aquellos que lo prefieran, [*aquí*][6] es posible descargar un script que instala en vuestra máquina Linux o servidor WSL, los programas mencionados anteriormente. Para ello solo hace falta ejecutar el siguiente comando desde la ubicación del archivo:
-
-```bash
-$ ./setup-install.sh
-```
-
-Si te encuentras en el entorno WSL puedes acceder desde tu distribución a cualquier disco de Windows desde la carpeta ```mnt/```, alternativamente puedes arrastrar el archivo desde el explorador de archivos accediendo a la carpeta Linux que se generó una vez instalaste tu primera distribución (justo debajo de redes).
-
-En caso de que el archivo no tenga permisos de ejecución, puedes modificarlos con la siguiente instrucción:
-
-```bash
-$ sudo chmod +x setup-install.sh
-```
-
 
    ## Conclusión
 
@@ -231,4 +244,3 @@ Si has iniciado un contenedor con el comando ```docker run [IMAGE]``` tendrás u
 [3]:https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=es-es&gl=es
 [4]:https://docs.docker.com/desktop/install/linux-install/
 [5]:https://code.visualstudio.com/Download
-[6]:https://github.com/deii-ulpgc-tecnologia/documentation/blob/systems-docs/introductory-guides/setup-install.sh
