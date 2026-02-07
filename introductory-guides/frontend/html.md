@@ -1,8 +1,21 @@
-# ¿Cómo empezar con HTML?
+# ¿Qué es HTML?
 
 [Página de referencia](https://en.wikipedia.org/wiki/HTML_element)
 
+[Wikipedia](https://en.wikipedia.org/wiki/HTML_element)
+
+"**HTML** (Lenguaje de Marcas de Hipertexto, del inglés  *HyperText Markup Language* ) es el componente más básico de la Web. Define el significado y la estructura del contenido web.
+
+"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la « *World Wide Web* » (Red Informática Mundial)." - MDNWeb
+
 # Etiquetas
+
+Una etiqueta se basa en "<", texto, ">", si tiene un cierre acabará de forma "<", texto, ">"; si no tiene cierre, es conveniente que la etiqueta sea "<" texto "/" ">".
+
+```apache
+<div></div> 	#Necesita etiqueta de cierre.
+<input/> 	#Solo es necesario 1 etiqueta.
+```
 
 ## Etiquetas estructurales
 
@@ -28,7 +41,6 @@ Para ejecutar el fichero HTML, pulsar `Ctrl + Shift + P` y escribir `Live Server
 
 A continuación, clicaremos sobre el fichero `index.html` y le daremos a `Open with Live Server`.
 
-
 ```apache
 <!-- Comentario en HTML -->
 <!DOCTYPE html>
@@ -48,7 +60,7 @@ A continuación, clicaremos sobre el fichero `index.html` y le daremos a `Open w
 ## Etiquetas básicas del Body
 
 Dentro de todas las etiquetas que pueden existir, las más útiles son las siguientes:
-![E](./assets/estructura_html.jpg)
+![Etiquetas](../assets/estructura_html.jpg)
 
 ### Estructuras básicas
 
@@ -107,4 +119,17 @@ Elementos que puede contener una tabla:
 
 [Página de referencia](https://www.uv.es/~sto/libros/cyberdisk/alice/html/s1_6.htm)
 
-Acceder a [prueba de formularios](./examples/forms.html) para ver mejor el funcionamiento de los formularios.
+Para ver las distintas funcionalidades que se pueden desarrollar para realizar un formulario puedes revisar el fichero [forms.html](./examples/forms.html), ejecutar el fichero con Live Server, e ir **revisando cada elemento con el inspeccionar** para comprobar las distintas versiones que existen.
+
+# Ejercicio final de HTML
+
+A continuación te proponemos que clones el repositorio de ejercicios, y pruebes a resolver el ejercicio 1.
+
+El repositorio de los ejercicios es [frontend-start-pack](https://github.com/deii-ulpgc-tecnologia/frontend-start-pack). Para clonar el repositorio tendrás que tener git instalado en tu ordenador, y ejecutar `git clone https://github.com/deii-ulpgc-tecnologia/frontend-start-pack.git`.
+
+Aquí encontrarás:
+
+* README.md - Enunciados de los ejercicios
+* Ficheros html base para que desarrolles los ejercicios de forma local (En principio no hay que subir los ejercicios, ya diremos cómo lo pueden subir).
+* Carpeta *styles* con los ficheros css base para desarrollar los ejercicios 1 y 2.
+* Carpeta assets con las fotos necesarias para desarrollar los ejercicios/desarrollar el README.md.

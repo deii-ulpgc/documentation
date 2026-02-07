@@ -1,0 +1,122 @@
+/* Global */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* Variabels en css */
+/* https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+  --white: whitesmoke;
+}
+
+/* Cosas generales */
+body{ background-color: #140e14; }
+
+.gengar{
+    position: absolute;
+    width: 200px;
+    margin-left: 375px;
+    top: 0;
+}
+
+h1.title{
+    margin-top: 15px; 
+    text-align: center; 
+}
+h1.title, h2.legend, label{ color: var(--white); }
+
+form{
+    display: grid;
+    justify-content: center;
+}
+
+.container{ 
+    padding: 15px 100px; 
+    border-radius: 10px;
+}
+
+
+.flex-line{
+    display: flex;
+    column-gap: 25px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.flex-center{
+    justify-content: center
+}
+
+#nphone, #mail{ width: 96.5%; } /*Puro fallo y error hasta que quede bien*/
+
+/* Inputs de texto */
+
+.texto{
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    transition: all .4s ease;
+    background-color: var(--white);
+}
+.texto::placeholder{
+    transition: all .4s ease;
+    color: #888;
+}
+
+.texto:hover,
+.texto:hover:focus{
+    background-color: #ddd;
+    border: 2px solid #7e647e;
+}
+.texto:focus{ background-color: #7e647e; }
+.texto:focus::placeholder{ color: var(--white); }
+.texto:hover::placeholder{ color: #555; }
+
+/* Select */
+select{
+    background-color: var(--white);
+    border: 2px solid #555;
+    border-radius: 5px;
+    width: 100%;
+    transition: all .4s ease;
+    padding: 5px;
+}
+
+select:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+
+/* El botón */
+.send{
+    width: fit-content;
+    padding: 5px 25px;
+    font-weight: bold;
+    border: 2px solid #555;
+    transition: all .4s ease;
+    border-radius: 5px;
+}
+
+.send:hover{
+    background-color: #7e647e;
+    border: 2px solid #140e14;
+    color: var(--white);
+}
+
+
+@media (max-width: 480px){
+    .gengar{
+        width: 100px;
+        left: 25px;
+    }
+    .flex-line{
+        display: block;
+    }
+}
